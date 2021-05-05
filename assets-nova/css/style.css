@@ -51,21 +51,20 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-
-
 /*----------------------------------------------------------------------------------------------------------------------------
 #  Navbar
 ----------------------------------------------------------------------------------------------------------------------------*/
 .sidenav-parent {
-  /* background-color: green; */
+  background-color: rgba(21, 0, 37, 0);
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 
   height: 100%;
   width: 60px; /* change this with JavaScript */
+  /* width: 100%;  */
   position: fixed; /* Stay in place */
-  z-index: 1;
+  z-index: 10;
   top: 0;
   left: 0;
   overflow-x: hidden;
@@ -74,28 +73,43 @@ h1,h2,h3,h4,h5,h6 {
   transition: 0.6s;  /* 0.5 second transition effect to slide in the sidenav */
 }
 
+:root {
+   --colorBorde: 255, 255, 255; 
+  }
+
 .sidenav-parent #sidenav {
-  /* background-color: red; */
+  /* background-color: green; */
   width: 100%;
   height: 96%;
-  border-right: 2px solid white;
+  /* border-right: 2px solid rgb(255, 255, 255); */
+  border-right: 2px solid rgba(var(--colorBorde), 1);
 
+  /* display: block; */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   position: relative;
+
+  transition: 0.6s;
 }
+
+/* Icon menu */
 
 .sidenav-parent #sidenav #sidenav-menu {
   /* background-color: rgba(255, 105, 180, 0.8); */
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
+  /* writing-mode: vertical-rl; */
+  /* transform: rotate(180deg); */
   /* color: #fff; */
   font-family: 'Montserrat';
   font-weight: 500;
 
-  display: flex;
+  /* display: flex; */
+  display: inline-block;
+  cursor: pointer;
 
+  margin: auto 10px;
+  
+  
   transition: 0.5s;
 }
 
@@ -103,41 +117,119 @@ h1,h2,h3,h4,h5,h6 {
   color:#ff4e15;
 }
 
-.sidenav-parent #sidenav #sidenav-links {
-  /* background-color: rgba(0, 255, 149, 0.8); */
-  width: 100%;
-
-  display: none;
-  justify-content: center;
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 2px;
+  /* background-color: #fff; */
+  margin: 10px 0;
+  transition: 0.4s;
 }
 
-.sidenav-parent #sidenav #sidenav-links ul {
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 8px) ;
+  transform: rotate(-45deg) translate(-8px, 8px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-9px, -8px) ;
+  transform: rotate(45deg) translate(-9px, -8px) ;
+}
+
+
+/* contenido menu */
+
+.sidenav-parent #sidenav #sidenav-menu-content {
+  /* background-color: rgba(4, 0, 255, 0.8); */
+  /* width: 100%; */
+  margin-left: 20vw;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  /* justify-content: center; */
+}
+
+
+.sidenav-parent #sidenav #sidenav-menu-content #sidenav-links {
+  /* background-color: rgba(0, 255, 149, 0.8); */
+  /* width: 100%; */
+padding-top: 100px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.sidenav-parent #sidenav #sidenav-menu-content #sidenav-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
   /* color: #5100e7; */
 }
 
-.sidenav-parent #sidenav #sidenav-links ul li {
+.sidenav-parent #sidenav #sidenav-menu-content #sidenav-links ul li {
   /* background-color: rgba(255, 105, 105, 0.5); */
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.sidenav-parent #sidenav #sidenav-links ul li a {
+.sidenav-parent #sidenav #sidenav-menu-content #sidenav-links ul li a {
   /* background-color: rgba(255, 105, 105, 0.5); */
   padding: 10px;
   text-decoration: none;
   font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 15px;
-  /* color: #fff; */
+  font-weight: 500;
+  font-size: 35px;
+  color: #fff;
   transition: 0.3s;
 }
 
-.sidenav-parent #sidenav #sidenav-links ul li a:hover {
+.sidenav-parent #sidenav #sidenav-menu-content #sidenav-links ul li a:hover {
   color: #ff4e15;
 }
+
+
+
+.sidenav-parent #sidenav #sidenav-menu-content #sidenav-redes {
+  /* background-color: rgba(238, 255, 0, 0.8); */
+  width: 100%;
+  margin-left: 20px;
+}
+
+.sidenav-parent #sidenav #sidenav-menu-content #sidenav-redes a span{
+
+  vertical-align: middle;
+}
+
+.sidenav-parent #sidenav #sidenav-menu-content #sidenav-redes a {
+  /* background-color: rgba(255, 105, 105, 0.5); */
+  /* padding: 10px; */
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 17px;
+  color: #34ccdf;
+  transition: 0.3s;
+
+}
+
+.sidenav-parent #sidenav #sidenav-menu-content #sidenav-redes  a:hover {
+  color: #fff;
+}
+
+
+
+
+
+
+
 
 .color-letra-blanco{
   
@@ -151,7 +243,6 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-
 /*----------------------------------------------------------------------------------------------------------------------------
 #  Logo
 ----------------------------------------------------------------------------------------------------------------------------*/
@@ -161,8 +252,8 @@ h1,h2,h3,h4,h5,h6 {
   position: absolute;
   /* top: 20px; */
   /* margin-left: 22px; */
-  top: 0px;
-  margin-left: 25px;
+  top: 25px;
+  margin-left: -12px;
   z-index: 1;
 
   transition: margin-left .6s;
@@ -223,6 +314,35 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+#main .flecha-top {
+  
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 11;
+}
+
+
+#main .flecha-top img:hover {
+  
+  filter: invert(43%) sepia(84%) saturate(3742%) hue-rotate(351deg) brightness(100%) contrast(102%);
+
+}
+
+.filtro-flecha-top {
+  
+  filter: invert(43%) sepia(84%) saturate(3742%) hue-rotate(351deg) brightness(100%) contrast(102%);
+
+}
+
+#main .icon-whatsapp {
+  /* background-color: #ff4e15; */
+  position: absolute;
+  bottom: 35px;
+  right: 90px;
+  z-index: 11;
+
+}
 
 
 /*----------------------------------------------------------------------------------------------------------------------------
@@ -232,17 +352,81 @@ h1,h2,h3,h4,h5,h6 {
   /* background-color: rgba(255, 105, 180, 0.4); */
   height: 100%;
   width: 100% ;
-  color: #fff;
+  /* color: #fff; */
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  
+  position: relative;
 
   /* border: 10px solid red; */
 }
 
+#main .secciones #seccion-0 .idiomas {
+  
+  position: absolute;
+  top: 20px;
+  right: 40px;
+
+}
+
+#main .secciones #seccion-0 .idiomas a{
+  
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  margin: auto 5px;
+
+}
+
+#main .secciones #seccion-0 .idiomas a:hover{
+  
+  color: #ff4e15;
+
+}
 
 
+
+
+#main .secciones #seccion-0 .ver-reel {
+  
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+
+
+}
+
+#main .secciones #seccion-0 .ver-reel a span {
+  
+  vertical-align: middle;
+
+}
+
+#main .secciones #seccion-0 .ver-reel a{
+  
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+
+}
+
+#main .secciones #seccion-0 .ver-reel img{
+  
+  margin: auto 10px;
+
+}
+
+#main .secciones #seccion-0 .ver-reel a:hover{
+  
+  color: #ff4e15;
+
+}
 
 
 

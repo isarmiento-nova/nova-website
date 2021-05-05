@@ -2,8 +2,6 @@
 <html lang="en">
 
 
-
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,38 +27,50 @@
     <nav id="mySidenav" class="sidenav-parent">
 
 
-        <!-- <div id="sidenav" href="javascript:void(0)" onclick="toggleNav()"> -->
-        <div id="sidenav" href="javascript:void(0)" onmouseover="openNav()" onmouseout="closeNav()">
+        <div id="sidenav-logo" href="javascript:void(0)" onclick="closeNav()">
+
+            <a href="#seccion-0"><img id="logo-img-in" src="assets-nova/img/anim-logo-in.png" 
+                    alt="Logo Nova Transmedia" ></a>
+            <a href="#seccion-0"><img id="logo-gif-in" src="assets-nova/img/anim-logo-in.gif" 
+                    alt="Logo Nova Transmedia" ></a>
+            <!-- <a href="#seccion-0"><img id="logo-img-out" src="assets-nova/img/anim-logo-out.png" 
+                    alt="Logo Nova Transmedia"></a> -->
+            <a href="#seccion-0"><img id="logo-gif-out" src="assets-nova/img/anim-logo-out.gif" 
+                    alt="Logo Nova Transmedia" ></a>
+                    
+        </div>
 
 
+        <div id="sidenav" href="javascript:void(0)" onclick="toggleNav()" >
 
-            <div id="sidenav-logo" href="javascript:void(0)" onclick="closeNav()">
-
-                <a href="#seccion-0"><img id="logo-img-in" src="assets-nova/img/anim-logo-in.png" 
-                        alt="Logo Nova Transmedia" ></a>
-                <a href="#seccion-0"><img id="logo-gif-in" src="assets-nova/img/anim-logo-in.gif" 
-                        alt="Logo Nova Transmedia" ></a>
-                <!-- <a href="#seccion-0"><img id="logo-img-out" src="assets-nova/img/anim-logo-out.png" 
-                        alt="Logo Nova Transmedia"></a> -->
-                <a href="#seccion-0"><img id="logo-gif-out" src="assets-nova/img/anim-logo-out.gif" 
-                        alt="Logo Nova Transmedia" ></a>
-                        
-            </div>
 
 
 
             <div id="sidenav-menu" class="color-letra-blanco">
-                MENÚ
-            </div>
+                <!-- <img src="assets-nova/img/icon_menu.png" alt="Icono menu" height="30px"> -->
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
 
-            <div id="sidenav-links" >
-                <ul >
-                    <li><a href="#seccion-0">INICIO</a></li>
-                    <li><a href="#seccion-1">PROYECTOS</a></li>
-                    <li><a href="#seccion-2">INFORMACIÓN</a></li>
-                    <li><a href="#seccion-3">SERVICIOS</a></li>
-                    <li><a href="#seccion-4">CONTACTO</a></li>
-                </ul>
+            </div>
+            
+            <div id="sidenav-menu-content">
+
+                <div id="sidenav-links" >
+                    <ul >
+                        <li><a href="#seccion-0">Inicio</a></li>
+                        <li><a href="#seccion-1">Experiencia</a></li>
+                        <li><a href="#seccion-2">Nosotros</a></li>
+                        <li><a href="#seccion-3">Portafolio</a></li>
+                        <li><a href="#seccion-4">Contacto</a></li>
+                    </ul>
+                </div>
+    
+                <div id="sidenav-redes" >
+                    <a href="https://www.linkedin.com/company/novatransmedia/" target="_blank"><span>Linkedin</span><img   src="assets-nova/img/icon-linkedin.png" alt="icono linkedin" height="20px" style="margin-left: 5px;"></a>
+                </div>
+
+
             </div>
 
 
@@ -73,11 +83,78 @@
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
 
+        <div class="flecha-top" href="javascript:void(0)" onclick="closeNav()">
+            <a href="#seccion-0"><img  src="assets-nova/img/icon-flecha-top.png"   alt="Flecha top" height="25px"></a>
+
+        </div>
+
+        <div class="icon-whatsapp">
+            <a href="#seccion-0"><img  src="assets-nova/img/icon-whatsapp.png"   alt="Flecha top" height="40px" ></a>
+
+        </div>
+
         <!-- Home -->
-        <header class="secciones" data-color="colorSection-0">
+        <header class="secciones" >
             <div id="seccion-0" >
                 
                
+                <div class="idiomas">
+                    <a href="#seccion-0"><span>ESP</span>
+                    <a href="#seccion-0"><span>ENG</span>
+
+                </div>
+               
+                <div class="ver-reel">
+                    <a href="#seccion-0" ><img   src="assets-nova/img/icon-ver-reel.png" alt="icono linkedin" height="22px" style="margin-left: 5px;"><span>Ver el reel</span></a>
+
+                </div>
+               
+
+            <!-- Carrousel -->
+            <!-- <div id="carouselExampleControls" class="carousel slide row" data-mdb-ride="carousel" >
+                <div class="carousel-inner my-auto ">
+                  <div class="carousel-item active">
+                    <img
+                      src="https://mdbootstrap.com/img/new/slides/041.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://mdbootstrap.com/img/new/slides/042.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://mdbootstrap.com/img/new/slides/043.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-mdb-target="#carouselExampleControls"
+                  data-mdb-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-mdb-target="#carouselExampleControls"
+                  data-mdb-slide="next"
+                >
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div> -->
+
 
 
 
@@ -87,11 +164,11 @@
 
 
         <!-- Proyectos -->
-        <section class="secciones" data-color="colorSection-1">
+        <section class="secciones" >
             <div id="seccion-1">
                 <div>
                     <h1>
-                        Proyectos
+                        Experiencia
                     </h1>
 
                 </div>
@@ -100,11 +177,11 @@
         </section>
 
         <!-- Informacion -->
-        <section class="secciones" data-color="colorSection-2">
+        <section class="secciones" >
             <div id="seccion-2">
                 <div>
                     <h1>
-                        Información
+                        Nosotros
                     </h1>
 
                 </div>
@@ -113,11 +190,11 @@
         </section>
 
         <!-- Servicios -->
-        <section class="secciones" data-color="colorSection-3">
+        <section class="secciones" >
             <div id="seccion-3">
                 <div>
                     <h1>
-                        Servicios
+                        Portafolio
                     </h1>
 
                 </div>
@@ -126,7 +203,7 @@
         </section>
 
         <!-- Contacto -->
-        <section class="secciones" data-color="colorSection-4">
+        <section class="secciones" >
             <div id="seccion-4">
                 <div>
                     <h1>

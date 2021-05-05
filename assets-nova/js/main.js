@@ -25,12 +25,15 @@ function toggleNav() {
 function openNav() {
 
   console.log("OPEN");
-  document.getElementById("mySidenav").style.width = "150px";
- document.getElementById("main").style.marginLeft = "150px";
- document.getElementById("sidenav-logo").style.marginLeft = "0px";
+  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("mySidenav").style.background = "rgba(21, 0, 37, 0.9)";
+  document.getElementById("sidenav").style.borderRight = "2px solid rgba(var(--colorBorde), 0)";
+  // document.getElementById("main").style.marginLeft = "150px";
+  document.getElementById("sidenav-logo").style.marginLeft = "35px";
 
-  document.getElementById("sidenav-menu").style.display = "none";
-  document.getElementById("sidenav-links").style.display = "flex";
+  document.getElementById("sidenav-menu").classList.toggle("change");
+
+  // document.getElementById("sidenav-links").style.display = "flex";
 
 
   jQuery(function($) {
@@ -50,11 +53,14 @@ function openNav() {
 function closeNav() {
   console.log("CLOSE");
   document.getElementById("mySidenav").style.width = "60px";
-  document.getElementById("main").style.marginLeft = "60px";
-  document.getElementById("sidenav-logo").style.marginLeft = "22px";
+  document.getElementById("mySidenav").style.background = "rgba(21, 0, 37, 0)";
+  document.getElementById("sidenav").style.borderRight = "2px solid rgba(var(--colorBorde), 1)";
+  // document.getElementById("main").style.marginLeft = "60px";
+  document.getElementById("sidenav-logo").style.marginLeft = "-12px";
 
-  document.getElementById("sidenav-menu").style.display = "flex";
-  document.getElementById("sidenav-links").style.display = "none";
+  document.getElementById("sidenav-menu").classList.remove("change");
+
+  // document.getElementById("sidenav-links").style.display = "none";
 
   
 // evitar la animacion cuando presiona el logo pero esta cerrado el navbar
@@ -136,64 +142,79 @@ $(document).ready(function () {
         if (scroll > ($window.height() * 4)) {
           $body.css('background-color', '#5100e7');
           //cambiar color de menu
-          document.getElementById("sidenav").style.borderRight = "2px solid white";
-          $("#sidenav-menu").addClass("color-letra-blanco");
-          $("#sidenav-links ul li a").addClass("color-letra-blanco");
-          $("#sidenav-menu").removeClass("color-letra-naranja");
-          $("#sidenav-links ul li a").removeClass("color-letra-naranja");
+          document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255')
+          // document.getElementById("sidenav").style.borderRight = "2px solid white";
+          // $("#sidenav-menu").addClass("color-letra-blanco");
+          // $("#sidenav-links ul li a").addClass("color-letra-blanco");
+          // $("#sidenav-menu").removeClass("color-letra-naranja");
+          // $("#sidenav-links ul li a").removeClass("color-letra-naranja");
+           $(".flecha-top a img").removeClass("filtro-flecha-top");
 
-          $("#sidenav-logo img").removeClass("color-logo-naranja");
+           $("#sidenav-logo img").removeClass("color-logo-naranja");
+           $("#sidenav-menu div").css('background-color', '#fff');
 
 
 
       } else if (scroll > ($window.height() * 3)) {
           $body.css('background-color', '#fff');
         //cambiar color de menu
-        document.getElementById("sidenav").style.borderRight = "2px solid #ff4e15";
-        $("#sidenav-menu").removeClass("color-letra-blanco");
-        $("#sidenav-links ul li a").removeClass("color-letra-blanco");
-        $("#sidenav-menu").addClass("color-letra-naranja");
-        $("#sidenav-links ul li a").addClass("color-letra-naranja");
+          document.querySelector(':root').style.setProperty('--colorBorde', '255,78,21')
+        // document.getElementById("sidenav").style.borderRight = "2px solid #ff4e15";
+        // $("#sidenav-menu").removeClass("color-letra-blanco");
+        // $("#sidenav-links ul li a").removeClass("color-letra-blanco");
+        // $("#sidenav-menu").addClass("color-letra-naranja");
+        // $("#sidenav-links ul li a").addClass("color-letra-naranja");
+           $(".flecha-top a img").addClass("filtro-flecha-top");
 
-        $("#sidenav-logo img").addClass("color-logo-naranja");
+         $("#sidenav-logo img").addClass("color-logo-naranja");
+         $("#sidenav-menu div").css('background-color', '#ff4e15');
 
 
       } else if (scroll > ($window.height() * 2)) {
           $body.css('background-color', '#ff4e15');
           //cambiar color de menu
-          document.getElementById("sidenav").style.borderRight = "2px solid white";
-          $("#sidenav-menu").addClass("color-letra-blanco");
-          $("#sidenav-links ul li a").addClass("color-letra-blanco");
-          $("#sidenav-menu").removeClass("color-letra-naranja");
-          $("#sidenav-links ul li a").removeClass("color-letra-naranja");
+          document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255')
+          // document.getElementById("sidenav").style.borderRight = "2px solid white";
+          // $("#sidenav-menu").addClass("color-letra-blanco");
+          // $("#sidenav-links ul li a").addClass("color-letra-blanco");
+          // $("#sidenav-menu").removeClass("color-letra-naranja");
+          // $("#sidenav-links ul li a").removeClass("color-letra-naranja");
+           $(".flecha-top a img").removeClass("filtro-flecha-top");
 
-          $("#sidenav-logo img").removeClass("color-logo-naranja");
+           $("#sidenav-logo img").removeClass("color-logo-naranja");
+           $("#sidenav-menu div").css('background-color', '#fff');
 
 
 
       } else if (scroll > ($window.height() * 1)) {
           $body.css('background-color', '#260031');
           //cambiar color de menu
-          document.getElementById("sidenav").style.borderRight = "2px solid white";
-          $("#sidenav-menu").addClass("color-letra-blanco");
-          $("#sidenav-links ul li a").addClass("color-letra-blanco");
-          $("#sidenav-menu").removeClass("color-letra-naranja");
-          $("#sidenav-links ul li a").removeClass("color-letra-naranja");
+          document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255')
+          // document.getElementById("sidenav").style.borderRight = "2px solid white";
+          // $("#sidenav-menu").addClass("color-letra-blanco");
+          // $("#sidenav-links ul li a").addClass("color-letra-blanco");
+          // $("#sidenav-menu").removeClass("color-letra-naranja");
+          // $("#sidenav-links ul li a").removeClass("color-letra-naranja");
+           $(".flecha-top a img").removeClass("filtro-flecha-top");
 
-          $("#sidenav-logo img").removeClass("color-logo-naranja");
+           $("#sidenav-logo img").removeClass("color-logo-naranja");
+           $("#sidenav-menu div").css('background-color', '#fff');
 
 
 
       } else if (scroll > ($window.height() * 0)) {
           $body.css('background-color', '#280250');
           //cambiar color de menu
-          document.getElementById("sidenav").style.borderRight = "2px solid white";
-          $("#sidenav-menu").addClass("color-letra-blanco");
-          $("#sidenav-links ul li a").addClass("color-letra-blanco");
-          $("#sidenav-menu").removeClass("color-letra-naranja");
-          $("#sidenav-links ul li a").removeClass("color-letra-naranja");
+          document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255')
+          // document.getElementById("sidenav").style.borderRight = "2px solid white";
+          // $("#sidenav-menu").addClass("color-letra-blanco");
+          // $("#sidenav-links ul li a").addClass("color-letra-blanco");
+          // $("#sidenav-menu").removeClass("color-letra-naranja");
+          // $("#sidenav-links ul li a").removeClass("color-letra-naranja");
+           $(".flecha-top a img").removeClass("filtro-flecha-top");
 
-          $("#sidenav-logo img").removeClass("color-logo-naranja");
+           $("#sidenav-logo img").removeClass("color-logo-naranja");
+           $("#sidenav-menu div").css('background-color', '#fff');
 
 
 
