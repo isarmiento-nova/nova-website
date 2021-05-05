@@ -429,6 +429,15 @@ padding-top: 100px;
 }
 
 
+#main .secciones #seccion-0 #carousel {
+  
+  font-family: 'Montserrat';
+  /* font-weight: 600;
+  font-size: 13px; */
+  color: #34ccdf;
+
+}
+
 
 /*----------------------------------------------------------------------------------------------------------------------------
 #  Proyectos
