@@ -12,7 +12,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400i,400,500,600,700,700i|Lato:300,300i,400,400i,700,700i"
         rel="stylesheet">
 
     <!-- Template Main CSS File -->
@@ -24,12 +24,10 @@
 
 <body>
 
-    <!-- Left Side Navbar -->
+<!-- Navbar -->
     <nav id="mySidenav" class="sidenav-parent">
 
-
         <div id="sidenav-logo" href="javascript:void(0)" onclick="closeNav()">
-
             <a href="#seccion-0"><img id="logo-img-in" src="assets-nova/img/anim-logo-in.png" 
                     alt="Logo Nova Transmedia" ></a>
             <a href="#seccion-0"><img id="logo-gif-in" src="assets-nova/img/anim-logo-in.gif" 
@@ -38,25 +36,18 @@
                     alt="Logo Nova Transmedia"></a> -->
             <a href="#seccion-0"><img id="logo-gif-out" src="assets-nova/img/anim-logo-out.gif" 
                     alt="Logo Nova Transmedia" ></a>
-                    
         </div>
 
-
         <div id="sidenav" href="javascript:void(0)" onclick="toggleNav()" >
-
-
-
 
             <div id="sidenav-menu" class="color-letra-blanco">
                 <!-- <img src="assets-nova/img/icon_menu.png" alt="Icono menu" height="30px"> -->
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
-
             </div>
             
             <div id="sidenav-menu-content">
-
                 <div id="sidenav-links" >
                     <ul >
                         <li><a href="#seccion-0">Inicio</a></li>
@@ -70,142 +61,125 @@
                 <div id="sidenav-redes" >
                     <a href="https://www.linkedin.com/company/novatransmedia/" target="_blank"><span>Linkedin</span><img   src="assets-nova/img/icon-linkedin.png" alt="icono linkedin" height="20px" style="margin-left: 5px;"></a>
                 </div>
-
-
             </div>
-
-
         </div>
-
 
     </nav>
 
 
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
 
+<!-- Elementos de todas las vistas -->
         <div class="flecha-top" href="javascript:void(0)" onclick="closeNav()">
             <a href="#seccion-0"><img  src="assets-nova/img/icon-flecha-top.png"   alt="Flecha top" height="25px"></a>
-
         </div>
 
         <div class="icon-whatsapp">
             <a href="#seccion-0"><img  src="assets-nova/img/icon-whatsapp.png"   alt="Flecha top" height="40px" ></a>
-
         </div>
 
-        <!-- Home -->
+<!-- Home -->
         <section class="secciones" >
             <div id="seccion-0" >
+
+                <div class="idiomas" style="z-index: 11;">
+                    <a href="#seccion-0"><span>ESP</span>
+                    <a href="#seccion-0"><span>ENG</span>
+                </div>
                 
-               
-            <div class="idiomas">
-                <a href="#seccion-0"><span>ESP</span>
-                <a href="#seccion-0"><span>ENG</span>
+                <div class="ver-reel" style="z-index: 11;">
+                    <a href="#seccion-0" ><img   src="assets-nova/img/icon-ver-reel.png" alt="icono linkedin" height="22px" style="margin-left: 5px;"><span>Ver el reel</span></a>
+                </div>
+                
+<!-- Carousel -->
 
-            </div>
-            
-            <div class="ver-reel">
-                <a href="#seccion-0" ><img   src="assets-nova/img/icon-ver-reel.png" alt="icono linkedin" height="22px" style="margin-left: 5px;"><span>Ver el reel</span></a>
+                <div id="carousel" class="carousel slide d-block w-100 " data-ride="carousel">
+                    
+                    <div class="carousel-inner d-flex align-items-center "  style=" height: 100%;" >
 
-            </div>
-               
+                        <div class="carousel-item " >
 
-            <!-- Carousel -->
-            <div id="carousel" class="row">
-
-                <div id="carouselExampleControls" class="carousel slide  " data-bs-ride="carousel" style=" height: 100%;" >
-                    <div class="carousel-inner "  style=" height: 100%;" >
-
-                        <div class="carousel-item active" style=" height: 100%;">
-                            <div class=" d-block w-100 " style=" height: 100%;" >
-  
-                              <div class="row h-100 d-flex justify-content-center  align-items-center  "  >
-    
-                                <img src="assets-nova/img/home/logo_nova.png" class="    w-50 " alt="...">
-    
-                                <div class="col-12 text-center " >
-                                    <h6>Proyecto spin off de la</h6>
-                                    <h5>Universidad Nacional de Colombia</h5>
-                                  </div>
-    
-    
-                              </div>
-  
-  
-                            </div>
-                        </div>
-
-                        <div class="carousel-item " style=" height: 100%;">
-                            <div class=" d-block w-100 "  style=" height: 100%;">
-  
-                                <div class="row h-100 d-flex justify-content-center  align-items-center  "  >
-      
-                                    <div class="col col-lg-5 align-items-end mx-auto d-flex justify-content-center">
-                                        <div class="post-img"><img src="assets-nova/img/home/pc.png" class="img-fluid" alt=""></div>
-                                    
-                                    
-                                    
-                                    
+                            <div class="container-fluid mb-5 pb-5">
+                                <div class="row ">
+                                    <div class="col-12 d-flex justify-content-center ">
+                                        <img src="assets-nova/img/home/logo_nova.png" width="46%" alt="logo_nova">
                                     </div>
-                                    
-                                    
-                                    
-                                    <div class="col col-lg-7 d-flex align-items-center  justify-content-center mt-lg-4 my-4">
-                                    
-                                    
-                                        <div class="">
-                                        <h1 class="title"><a>360Lab</a></h1>
-                                        <h4 class="pb-0 mb-0" style="font-weight: 600;">¡Aprende en el laboratorio desde la sala de tu casa!</h4>
-                                        <h4 class="">Laboratorio en VR - 360°</h4>
-                                        
-                                        
-                                            <div class="post-img-normal"><img src="assets-nova/img/pc/google-play-logo.png" class="img-fluid" alt=""></div>
-                                        
-                                        </div>
-
-
-                                        <div class=" text-end mt-3">
-			
-                                  
-                                  
-                                  </div>
-                                  
-
-
+                                    <!-- <div class="col-12 d-flex justify-content-center pt-5">
+                                        <h6>Proyecto spin off de la</h6>
                                     </div>
-					
-      
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <h5>Universidad Nacional de Colombia</h5>
+                                    </div> -->
+
                                 </div>
-  
-  
-  
+
                             </div>
+
+                            <div class="container-fluid " style="position: absolute; bottom: -150px;">
+                                <div class="row ">
+                                    <div class="col-12 d-flex justify-content-center ">
+                                        <h6>Proyecto spin off de la</h6>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <h5>Universidad Nacional de Colombia</h5>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
 
-                      
 
 
+                        <div class="carousel-item active" >
+
+                            <div class="container-fluid w-75" >
+                                <div class="row ">
+
+                                    <div class="col-6 d-flex justify-content-center align-items-center ">
+                                        <!-- <img src="assets-nova/img/home/pc.png"  alt="logo_nova" class="img-fluid"> -->
+                                        <div ><img src="assets-nova/img/home/pc.png" class="img-fluid" alt=""></div>
+                                    </div>
+
+                                    <div class="col-6 d-flex justify-content-center pt-5">
+                                        <div class="row">
+                                            <h1 >360Lab</h1>
+                                            <h2 ">¡Aprende en el laboratorio desde la sala de tu casa!</h2>
+                                            <h3 >Laboratorio en VR - 360°</h3>
+                                            <div class="my-3"><img src="assets-nova/img/pc/google-play-logo.png" class="img-fluid" alt="" width="65%"></div>
+                                            <h4 class="mb-5">#SomosNovaTransmedia</h4>
+                                            <div class="col mt-5">
+                                                <a href="https://storage.googleapis.com/prueba01360lab/index.html" target="_blank" >+ Ir al laboratorio</a>
+                                                <a href="https://play.google.com/store/apps/details?id=com.gitei.lab360" class="m-4" target="_blank" >+ Descargar app</a>
+
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        
                     </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span aria-hidden="true"><img  src="assets-nova/img/icon-flecha-prev.png"   alt="Flecha top" height="30px"></span>
+                    <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span aria-hidden="true"><img  src="assets-nova/img/icon-flecha-next.png"   alt="Flecha top" height="30px"></span>
+                    <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
 
-
-
-
-            </div>
-
-
-
-
+                </div>
             </div>
         </section>
 
