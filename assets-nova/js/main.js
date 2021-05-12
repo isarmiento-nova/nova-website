@@ -171,7 +171,7 @@ $(document).ready(function () {
 
 
       } else if (scroll > ($window.height() * 2)) {
-          $body.css('background-color', '#ff4e15');
+        $body.css('background-color', '#260031');
           //cambiar color de menu
           document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255')
           // document.getElementById("sidenav").style.borderRight = "2px solid white";
@@ -187,7 +187,7 @@ $(document).ready(function () {
 
 
       } else if (scroll > ($window.height() * 1)) {
-          $body.css('background-color', '#260031');
+          $body.css('background-color', '#ff4e15');
           //cambiar color de menu
           document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255')
           // document.getElementById("sidenav").style.borderRight = "2px solid white";

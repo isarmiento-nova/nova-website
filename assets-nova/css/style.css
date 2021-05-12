@@ -656,7 +656,7 @@ padding-top: 100px;
 
 
 /*----------------------------------------------------------------------------------------------------------------------------
-#  Servicios
+#  Portafolio
 ----------------------------------------------------------------------------------------------------------------------------*/
 #main .secciones #seccion-3 {
   /* background-color: #fff; */
@@ -669,7 +669,40 @@ padding-top: 100px;
   justify-content: center;
 }
 
+#main .secciones #seccion-3 h1{
+  
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 33px;
+  color: #5100f1;
+  
+}
 
+#main .secciones #seccion-3 h2{
+  
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 22px;
+  color: #ff4e15;
+  
+}
+
+#main .secciones #seccion-3 hr{
+  
+  border: 1px solid #ff4e15;
+  opacity: 1;
+  
+}
+
+
+#main .secciones #seccion-3 h3{
+  
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 19px;
+  color: #5100f1;
+  
+}
 
 
 
