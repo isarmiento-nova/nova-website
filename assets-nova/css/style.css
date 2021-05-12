@@ -498,32 +498,9 @@ padding-top: 100px;
 
 
 
-/*----------------------------------------------------------------------------------------------------------------------------
-#  Proyectos
-----------------------------------------------------------------------------------------------------------------------------*/
-#main .secciones #seccion-1 {
-  /* background-color: #260031; */
-  height: 100%;
-  width: 100% ;
-  color: #fff;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-
 
 /*----------------------------------------------------------------------------------------------------------------------------
-#  Informacion
+#  Nosotros
 ----------------------------------------------------------------------------------------------------------------------------*/
 #main .secciones #seccion-2 {
   /* background-color: #ff4e15; */
@@ -534,7 +511,149 @@ padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: relative;
 }
+
+
+
+#main .secciones #seccion-2 .ver-reel {
+  
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+
+
+}
+
+#main .secciones #seccion-2 .ver-reel a span {
+  
+  vertical-align: middle;
+
+}
+
+#main .secciones #seccion-2 .ver-reel a{
+  
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+
+}
+
+#main .secciones #seccion-2 .ver-reel img{
+  
+  margin: auto 10px;
+
+}
+
+#main .secciones #seccion-2 .ver-reel a:hover{
+  
+  color: #ff4e15;
+
+}
+
+#main .secciones #seccion-2 h1{
+  
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 80px;
+  color: #fff;
+
+}
+
+#main .secciones #seccion-2 h1 span{
+  
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 80px;
+  color: #280250;
+
+}
+
+#main .secciones #seccion-2 p{
+  
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 22px;
+  color: #fff;
+
+}
+
+
+#main .secciones #seccion-2 h1 span:before{
+  
+  content: '';
+  animation: animate infinite 40s;
+
+}
+
+@keyframes animate{
+  0%{
+    content: 'fuertes.';
+  }
+  5%{
+    content: 'mejores.';
+  }
+  10%{
+    content: 'alegres.';
+  }
+  15%{
+    content: 'reir.';
+  }
+  20%{
+    content: 'conscientes.';
+  }
+  25%{
+    content: 'eficientes.';
+  }
+  30%{
+    content: 'asertivos.';
+  }
+  35%{
+    content: 'diferentes.';
+  }
+  40%{
+    content: 'solidarios.';
+  }
+  45%{
+    content: 'creativos.';
+  }
+  50%{
+    content: 'soñadores.';
+  }
+  55%{
+    content: 'tesos.';
+  }
+  60%{
+    content: 'competitivos.';
+  }
+  65%{
+    content: 'empáticos.';
+  }
+  70%{
+    content: 'brillantes.';
+  }
+  80%{
+    content: 'perseverantes.';
+  }
+  90%{
+    content: 'críticos.';
+  }
+  95%{
+    content: 'reflexivos.';
+  }
+  100%{
+    content: 'decisivos.';
+  }
+  
+}
+
+
+
+
+
 
 /*----------------------------------------------------------------------------------------------------------------------------
 #  Servicios
@@ -549,6 +668,13 @@ padding-top: 100px;
   align-items: center;
   justify-content: center;
 }
+
+
+
+
+
+
+
 
 /*----------------------------------------------------------------------------------------------------------------------------
 #  Contacto
@@ -565,9 +691,36 @@ padding-top: 100px;
 }
 
 
+
+
+
+
+
+
+
+
 /*----------------------------------------------------------------------------------------------------------------------------
 #  Experiencias
 ----------------------------------------------------------------------------------------------------------------------------*/
+
+
+#main .secciones #seccion-1 {
+  /* background-color: #260031; */
+  height: 100%;
+  width: 100% ;
+  color: #fff;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#main .secciones .container-strips h1{
+  position: absolute;
+  top: 100px;
+}
+
 
 .container-strips {
   position: relative;
