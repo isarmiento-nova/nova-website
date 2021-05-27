@@ -24,6 +24,13 @@ function toggleNav() {
 
 function reportWindowSize() {
   
+  // mostrar el primer carousle elemento
+var carousel01 = document.getElementById("carousel-1");
+carousel01.classList.add("active");
+var carousel02 = document.getElementById("carousel-2");
+carousel02.classList.remove("active");
+
+  
 // tomar la altura de la imagen de TRANSMEDIA
 var heightDiv = document.getElementById("img-transmedia").offsetWidth;
 // console.log(heightDiv/4);
