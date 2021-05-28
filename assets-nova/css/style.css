@@ -803,6 +803,12 @@ padding-top: 100px;
   position:relative;
   /* width: 200px; */
   /* opacity: 0; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#section1 .palabras #palabras-base  #palabra-oculta{
+  transition: all 0.2s ease-out;
 }
 
 #section1 .palabras .word {
