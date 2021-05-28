@@ -44,10 +44,10 @@ resizeCharacters(heightDiv/5);
 
   if(mediaqueryList.matches) {
     // console.log("Size CLOSE portrait");
-    document.getElementById("mySidenav").style.height = "60px";
+    document.getElementById("mySidenav").style.height = "50px";
     document.getElementById("mySidenav").style.width = "100%";
     document.getElementById("mySidenav").style.background = "rgba(21, 0, 37, 0)";
-    document.getElementById("sidenav").style.borderBottom = "2px solid rgba(var(--colorBorde), 1)";
+    // document.getElementById("sidenav").style.borderBottom = "2px solid rgba(var(--colorBorde), 1)";
     document.getElementById("sidenav").style.borderRight = "2px solid rgba(0,0,0,0)";
     document.getElementById("sidenav-logo").style.marginLeft = "-12px";
     
@@ -55,9 +55,9 @@ resizeCharacters(heightDiv/5);
   else{
     // console.log("Size CLOSE landscape");;
     document.getElementById("mySidenav").style.height = "100%"
-    document.getElementById("mySidenav").style.width = "60px";
+    document.getElementById("mySidenav").style.width = "50px";
     document.getElementById("mySidenav").style.background = "rgba(21, 0, 37, 0)";
-    document.getElementById("sidenav").style.borderBottom = "2px solid rgba(0,0,0,0)";
+    // document.getElementById("sidenav").style.borderBottom = "2px solid rgba(0,0,0,0)";
     document.getElementById("sidenav").style.borderRight = "2px solid rgba(var(--colorBorde), 1)";
     document.getElementById("sidenav-logo").style.marginLeft = "-12px";
 
@@ -99,7 +99,7 @@ function openNav() {
     // console.log("OPEN portrait");
     document.getElementById("mySidenav").style.height = "100%";
     document.getElementById("mySidenav").style.background = "rgba(21, 0, 37, 0.9)";
-    document.getElementById("sidenav").style.borderBottom = "2px solid rgba(var(--colorBorde), 0)";
+    // document.getElementById("sidenav").style.borderBottom = "2px solid rgba(var(--colorBorde), 0)";
     document.getElementById("sidenav-logo").style.marginLeft = "10px";
 
   }
@@ -134,15 +134,15 @@ function closeNav() {
 
   if(mediaqueryList.matches) {
     // console.log("CLOSE portrait");
-    document.getElementById("mySidenav").style.height = "60px";
+    document.getElementById("mySidenav").style.height = "50px";
     document.getElementById("mySidenav").style.background = "rgba(21, 0, 37, 0)";
-    document.getElementById("sidenav").style.borderBottom = "2px solid rgba(var(--colorBorde), 1)";
+    // document.getElementById("sidenav").style.borderBottom = "2px solid rgba(var(--colorBorde), 1)";
     document.getElementById("sidenav-logo").style.marginLeft = "-12px";
     
   }
   else{
     // console.log("CLOSE landscape");
-    document.getElementById("mySidenav").style.width = "60px";
+    document.getElementById("mySidenav").style.width = "50px";
     document.getElementById("mySidenav").style.background = "rgba(21, 0, 37, 0)";
     document.getElementById("sidenav").style.borderRight = "2px solid rgba(var(--colorBorde), 1)";
     document.getElementById("sidenav-logo").style.marginLeft = "-12px";
