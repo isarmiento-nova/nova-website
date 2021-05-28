@@ -8,8 +8,14 @@ for (var i = 0; i < words.length; i++) {
 }
 
 function changeWord() {
+
+
   var cw = wordArray[currentWord];
   var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+
+  // console.log(words[currentWord].textContent);
+
+
   for (var i = 0; i < cw.length; i++) {
     animateLetterOut(cw, i);
   }
@@ -21,6 +27,12 @@ function changeWord() {
   }
   
   currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+  //PARA WIDTH ADAPTATIVO Y RESPONSIVE!!!!!
+  //PARA WIDTH ADAPTATIVO Y RESPONSIVE!!!!!
+  //PARA WIDTH ADAPTATIVO Y RESPONSIVE!!!!!
+  //PARA WIDTH ADAPTATIVO Y RESPONSIVE!!!!! 
+    document.getElementById('palabra-oculta').innerHTML = words[currentWord].textContent + "&nbsp;";
+  
 }
 
 function animateLetterOut(cw, i) {
@@ -51,4 +63,4 @@ function splitLetters(word) {
 }
 
 changeWord();
-setInterval(changeWord, 4000);
+setInterval(changeWord, 3500);

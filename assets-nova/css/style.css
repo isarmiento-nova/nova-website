@@ -758,8 +758,16 @@ padding-top: 100px;
 
 }
 
-  #section1 h1{
-  
+
+
+/* Titulo seccion nosotros */
+/* Titulo seccion nosotros */
+/* Titulo seccion nosotros */
+/* Titulo seccion nosotros */
+
+
+
+#section1 .palabras h1{
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 80px;
@@ -767,8 +775,15 @@ padding-top: 100px;
 
 }
 
-  #section1 h1 span{
-  
+#section1 .palabras h5{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 22px;
+  color: #fff;
+  line-height: 150%;
+}
+
+#section1 .palabras  #palabras-base span{
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 80px;
@@ -776,81 +791,29 @@ padding-top: 100px;
 
 }
 
-  #section1 p{
-  
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 22px;
-  color: #fff;
+/* Palabras rotando */
+/* Palabras rotando */
+/* Palabras rotando */
+/* Palabras rotando */
 
+
+
+#section1 .palabras #palabras-base {
+  /* background-color: #33cbd9; */
+  position:relative;
+  /* width: 200px; */
+  /* opacity: 0; */
 }
 
-
-  /* #section1 h1 span:before{
-  
-  content: '';
-  animation: animate infinite 40s;
-
-} */
-
-
-@media screen and (max-width: 1196px) {
-  
-  #section1 h1{
-    font-size: 70px;
-  }
-  
-    #section1 h1 span{
-    font-size: 70px;
-  }
-  
-}
-
-@media screen and (max-width: 992px) {
-  
-  #section1 h1{
-    font-size: 40px;
-  }
-  
-    #section1 h1 span{
-    font-size: 40px;
-  }
-  
-    #section1 p{
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  
-  #section1 h1{
-    font-size: 90px;
-  }
-  
-    #section1 h1 span{
-    font-size: 90px;
-  }
-  #section1 p{
-  font-size: 25px;
-}
-  
-}
-
-/* palabras rotando */
-/* palabras rotando */
-/* palabras rotando */
-/* palabras rotando */
-
-
-
-.word {
-  /* background-color: #33ccd9; */
-  position: absolute;
-  /* width: 220px; */
+#section1 .palabras .word {
+  /* background-color: #33cbd9; */
+  position:absolute;
+  left: 0px;
+  top: -10%;
   opacity: 0;
 }
 
-.letter {
+#section1 .palabras .letter {
   display: inline-block;
   position: relative;
   float: left;
@@ -858,21 +821,64 @@ padding-top: 100px;
   transform-origin: 50% 50% 25px;
 }
 
-.letter.out {
+#section1 .palabras .letter.out {
   transform: rotateX(90deg);
   transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.letter.behind {
+#section1 .palabras .letter.behind {
   transform: rotateX(-90deg);
 }
 
-.letter.in {
+#section1 .palabras .letter.in {
   transform: rotateX(0deg);
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 
+
+
+@media screen and (max-width: 1196px) {
+  
+  #section1 .palabras h1{
+    font-size: 70px;
+  }
+  
+    #section1 .palabras  #palabras-base  span{
+    font-size: 70px;
+  }
+  
+}
+
+@media screen and (max-width: 992px) {
+  
+  #section1 .palabras h1{
+    font-size: 40px;
+  }
+  
+    #section1  .palabras  #palabras-base  span{
+    font-size: 40px;
+  }
+  
+    #section1  .palabras h5{
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  
+  #section1  .palabras h1{
+    font-size: 90px;
+  }
+  
+    #section1  .palabras #palabras-base   span{
+    font-size: 90px;
+  }
+  #section1 .palabras h5{
+  font-size: 25px;
+}
+  
+}
 
 
 
