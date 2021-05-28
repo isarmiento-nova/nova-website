@@ -285,7 +285,6 @@ padding-top: 100px;
 }
 
 
-
 /*----------------------------------------------------------------------------------------------------------------------------
 #  Responsive
 #  Responsive
@@ -893,7 +892,128 @@ padding-top: 100px;
 /*----------------------------------------------------------------------------------------------------------------------------
 #  Portafolio
 ----------------------------------------------------------------------------------------------------------------------------*/
-  #section3 {
+  
+
+
+#section2 {
+  /* position: relative; */
+
+}
+
+
+
+.color-logo-azul{
+  filter: invert(67%) sepia(83%) saturate(427%) hue-rotate(139deg) brightness(150%) contrast(87%);
+}
+
+
+
+#section2 .ver-reel {
+  
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+
+
+}
+
+  #section2 .ver-reel a span {
+  
+  vertical-align: middle;
+
+}
+
+  #section2 .ver-reel a{
+  
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 15px;
+  color: #34ccdf;
+  transition: 0.3s;
+
+}
+
+  #section2 .ver-reel img{
+  
+  margin: auto 10px;
+
+}
+
+  #section2 .ver-reel a:hover{
+  
+  color: #fff;
+
+}
+
+
+
+  #section2 .titulo-videos a{
+  
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  color: #34ccdf;
+  transition: 0.3s;
+
+}
+
+#section2 .titulo-videos a span {
+  
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.3s;
+  /* vertical-align: middle; */
+
+}
+
+
+
+
+
+
+#section2 h1{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 40px;
+  color: #fff;
+  /* position: absolute;
+  top: 50px;
+  left: 20px; */
+
+}
+
+#section2 .video-individual{
+  /* background-color: khaki; */
+  height: 25%;
+
+}
+
+
+@media screen and (max-width: 576px) {
+  
+  #section2 h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  
+}
+
+@media screen and (min-width: 1200px) {
+  
+  #section2 .video-individual{
+    height: 100%;
+  }
+  
+}
+
+
+#section3 {
   /* background-color: #fff; */
   /* height: 100%; */
   /* width: 100% ; */
