@@ -200,7 +200,7 @@ $(function() {
 
 
 var body = document.getElementsByTagName("BODY")[0]; 
-
+// var body = document.getElementById("c");
   function chageColors(index) {
     
         if (index === 4) {
