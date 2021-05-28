@@ -2,12 +2,12 @@ var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 var cH;
 var cW;
-var bgColor = "#280250";
+var bgColor = "#5100e7";
 var animations = [];
 var circles = [];
 
 var colorPicker = (function() {
-  var colors = ["#280250","#ff4e15", "#5100e7", "#2980B9"];
+  var colors = [ "#5100e7","#280250", "#2980B9","#ff4e15"];
   var index = 0;
   function next() {
     index = index++ < colors.length-1 ? index : 0;
@@ -194,15 +194,16 @@ function handleInactiveUser() {
 }
 
 function startFauxClicking() {
-//   setTimeout(function(){
-//     fauxClick(anime.random( cW * .2, cW * .8), anime.random(cH * .2, cH * .8));
-//     startFauxClicking();
-//   }, anime.random(200, 900));
+  setTimeout(function(){
+    fauxClick(anime.random( cW * .2, cW * .8), anime.random(cH * .2, cH * .8));
+    startFauxClicking();
+  }, anime.random(200, 900));
 }
 
 function fauxClick(x, y) {
-//   var fauxClick = new Event("mousedown");
-//   fauxClick.pageX = x;
-//   fauxClick.pageY = y;
-//   document.dispatchEvent(fauxClick);
+  var fauxClick = new Event("mousedown");
+  fauxClick.pageX = x;
+  fauxClick.pageY = y;
+  document.dispatchEvent(fauxClick);
 }
+
