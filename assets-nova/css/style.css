@@ -1,6 +1,10 @@
 
 /*----------------------------------------------------------------------------------------------------------------------------
 #  General
+#  General
+#  General
+#  General
+#  General
 ----------------------------------------------------------------------------------------------------------------------------*/
 *{
   margin: 0;
@@ -58,17 +62,12 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-
-canvas {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background-color: #280250;
-  transition: background-color 0.5s ease;
-  position: absolute;
-}
-
 /*----------------------------------------------------------------------------------------------------------------------------
+#  Navbar
+#  Navbar
+#  Navbar
+#  Navbar
+#  Navbar
 #  Navbar
 ----------------------------------------------------------------------------------------------------------------------------*/
 
@@ -275,9 +274,10 @@ padding-top: 100px;
 
 
 
-/*----------------------------------------------------------------------------------------------------------------------------
-#  Logo
-----------------------------------------------------------------------------------------------------------------------------*/
+/* #  Logo */
+/* #  Logo */
+/* #  Logo */
+/* #  Logo */
 
 .sidenav-parent #sidenav-logo {
   /* background-color: rgba(255, 105, 180, 0.8); */
@@ -285,7 +285,7 @@ padding-top: 100px;
   /* top: 20px; */
   /* margin-left: 22px; */
   top: 25px;
-  left: 0px;
+  left: -4px;
   margin-left: -12px;
   z-index: 1;
 
@@ -304,11 +304,10 @@ padding-top: 100px;
 }
 
 
-/*----------------------------------------------------------------------------------------------------------------------------
-#  Responsive
-#  Responsive
-#  Responsive
-----------------------------------------------------------------------------------------------------------------------------*/
+/* #  Responsive */
+/* #  Responsive */
+/* #  Responsive */
+/* #  Responsive */
 
 @media (orientation:portrait) {
 
@@ -415,6 +414,10 @@ padding-top: 100px;
 
 /*----------------------------------------------------------------------------------------------------------------------------
 #  Main Sections
+#  Main Sections
+#  Main Sections
+#  Main Sections
+#  Main Sections
 ----------------------------------------------------------------------------------------------------------------------------*/
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -453,6 +456,11 @@ padding-top: 100px;
 
 /*----------------------------------------------------------------------------------------------------------------------------
 #  Hero
+#  Hero
+#  Hero
+#  Hero
+#  Hero
+#  Hero
 ----------------------------------------------------------------------------------------------------------------------------*/
   #section0 {
   /* background-color: rgba(255, 105, 180, 0.4); */
@@ -468,6 +476,17 @@ padding-top: 100px;
   /* padding-bottom: -60px; */
 
   /* border: 10px solid red; */
+}
+
+
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: #280250;
+  transition: background-color 0.5s ease;
+  position: absolute;
 }
 
   #section0 .idiomas {
@@ -730,6 +749,11 @@ padding-top: 100px;
 
 /*----------------------------------------------------------------------------------------------------------------------------
 #  Nosotros
+#  Nosotros
+#  Nosotros
+#  Nosotros
+#  Nosotros
+#  Nosotros
 ----------------------------------------------------------------------------------------------------------------------------*/
   #section1 {
   /* background-color: #ff4e15; */
@@ -916,14 +940,23 @@ padding-top: 100px;
 
 
 /*----------------------------------------------------------------------------------------------------------------------------
-#  Portafolio
+#  Experiencia
+#  Experiencia
+#  Experiencia
+#  Experiencia
+#  Experiencia
 ----------------------------------------------------------------------------------------------------------------------------*/
   
 
-
 #section2 {
-  /* position: relative; */
-
+  /* background-color: #260031; */
+  /* height: 100%; */
+  /* width: 100% ; */
+  color: #fff;
+  
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 
@@ -1048,10 +1081,50 @@ padding-top: 100px;
 
 
 
+/* videos individuales */
+/* videos individuales */
+/* videos individuales */
+/* videos individuales */
+
+#section2 .icon-box {
+  overflow: hidden;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+
+#section2 .icon-box:hover {
+  transform: translateY(-5px);
+}
+
+
+@media screen and (max-width: 1200px) {
+  
+#section2 .icon-box:hover {
+  transform: translateX(5px);
+}
+
+  
+}
 
 
 
 
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------
+#  Portafolio
+#  Portafolio
+#  Portafolio
+#  Portafolio
+#  Portafolio
+----------------------------------------------------------------------------------------------------------------------------*/
+  
 
 
 
@@ -1116,6 +1189,11 @@ padding-top: 100px;
 
 /*----------------------------------------------------------------------------------------------------------------------------
 #  Contacto
+#  Contacto
+#  Contacto
+#  Contacto
+#  Contacto
+#  Contacto
 ----------------------------------------------------------------------------------------------------------------------------*/
   #section4 {
   /* background-color: #5100e7; */
@@ -1142,17 +1220,7 @@ padding-top: 100px;
 ----------------------------------------------------------------------------------------------------------------------------*/
 
 
-  #section2 {
-  /* background-color: #260031; */
-  /* height: 100%; */
-  /* width: 100% ; */
-  color: #fff;
-  
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-}
-
+ 
 
   .container-strips h1{
   position: absolute;
