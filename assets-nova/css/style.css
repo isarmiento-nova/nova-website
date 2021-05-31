@@ -1024,6 +1024,8 @@ canvas {
 
   #section2 .titulo-videos a{
   
+cursor: pointer;
+
   text-decoration: none;
   font-family: 'Montserrat';
   font-weight: 500;
