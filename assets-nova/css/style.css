@@ -1132,12 +1132,32 @@ canvas {
 }
 
 
+#section2 .icon-box .video-individual video{
+  height: 100%;
+  width: auto;
+}
+
+#section2 .icon-box .video-individual img{
+  height: 100%;
+  width: auto;
+}
+
 @media screen and (max-width: 1200px) {
   
   #section2 .icon-box .video-individual{
     clip-path: circle(25px at center);
   }
     
+  #section2 .icon-box .video-individual video{
+    height: auto;
+    width: 100%;
+  }
+    
+  #section2 .icon-box .video-individual img{
+    height: auto;
+    width: 100%;
+  }
+
 }
   
 
