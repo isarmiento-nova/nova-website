@@ -24,6 +24,19 @@ function toggleNav() {
 
 function reportWindowSize() {
   
+
+
+  jQuery(function($) {
+    // ...
+  // $('#logo-img-in').hide();
+  $('#logo-gif-in').hide();
+  // $('#logo-img-out').hide();
+  $('#logo-gif-out').show();
+});
+
+  restartLogoGifOut();
+
+
   // mostrar el primer carousle elemento
 var carousel01 = document.getElementById("carousel-1");
 carousel01.classList.add("active");
@@ -189,6 +202,7 @@ $(function() {
   // $('#logo-img-out').hide();
   $('#logo-gif-out').show();
 
+  restartLogoGifOut();
 });
 
 
