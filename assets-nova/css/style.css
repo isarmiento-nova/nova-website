@@ -1126,6 +1126,7 @@ cursor: pointer;
 #section2 .icon-box .video-individual{
   clip-path: circle(30px at center);
   transition: clip-path 0.9s ease;
+  position: absolute;
 }
 
 #section2 .icon-box:hover .video-individual{
