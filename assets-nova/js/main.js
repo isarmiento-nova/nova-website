@@ -304,6 +304,30 @@ var myFullpage = new fullpage('#fullpage', {
 
 
 
+/*--------------------------------------------------------------
+#                       Transicion entre paginas
+--------------------------------------------------------------*/
+
+
+window.transitionToPage = function(href, colorNextPage) {
+  document.querySelector('body').style.opacity = 0;
+  document.querySelector('body').style.backgroundColor = colorNextPage;
+  setTimeout(function() { 
+      window.location.href = href
+  }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+  document.querySelector('body').style.opacity = 1
+})
+
+
+
+
+
+
+
+
 
 
 
