@@ -70,7 +70,7 @@ resizeCharacters(heightDiv/5);
   if (navOpenState) {
     jQuery(function($) {
       // ...
-    $('#logo-img-in').hide();
+    // $('#logo-img-in').hide();
     $('#logo-gif-in').hide();
     // $('#logo-img-out').hide();
     $('#logo-gif-out').show();
@@ -116,7 +116,7 @@ function openNav() {
 
   jQuery(function($) {
     // ...
-  $('#logo-img-in').hide();
+  // $('#logo-img-in').hide();
   $('#logo-gif-in').show();
   // $('#logo-img-out').hide();
   $('#logo-gif-out').hide();
@@ -155,7 +155,7 @@ function closeNav() {
   if (navOpenState) {
     jQuery(function($) {
       // ...
-    $('#logo-img-in').hide();
+    // $('#logo-img-in').hide();
     $('#logo-gif-in').hide();
     // $('#logo-img-out').hide();
     $('#logo-gif-out').show();
@@ -184,10 +184,10 @@ function restartLogoGifOut(){
 
 
 $(function() {
-  $('#logo-img-in').show();
+  // $('#logo-img-in').show();
   $('#logo-gif-in').hide();
   // $('#logo-img-out').hide();
-  $('#logo-gif-out').hide();
+  $('#logo-gif-out').show();
 
 });
 
