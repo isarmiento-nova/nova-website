@@ -1239,7 +1239,7 @@ cursor: pointer;
 
 
 
-#section3 a , #section3 p{
+#section3 p{
   
   font-family: 'Montserrat';
   font-weight: 600;
@@ -1249,11 +1249,11 @@ cursor: pointer;
   
 }
 
-#section3 a span{
+#section3 p span{
   
   font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 13px;
+  font-weight: 500;
+  font-size: 12px;
   color: #5100f1;
   text-decoration: none;
   
@@ -1270,9 +1270,15 @@ cursor: pointer;
     
   }
   
-  #section3 a{
+  #section3 p{
     font-weight: 500;
     font-size: 13px;
+    
+  }
+  #section3 p span{
+    
+    font-weight: 400;
+    font-size: 10px;
     
   }
 
