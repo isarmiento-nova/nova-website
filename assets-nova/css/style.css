@@ -1396,28 +1396,199 @@ cursor: pointer;
 #  Contacto
 ----------------------------------------------------------------------------------------------------------------------------*/
   #section4 {
-  /* background-color: #5100e7; */
-  /* height: 100%; */
-  /* width: 100% ; */
-  /* color: #fff; */
-  
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  color: #fff;
+  position: relative;
+}
+
+
+#section4 #gif-sobre {
+  height:  300px;
+}
+
+
+#section4  #sidenav-redes {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+
+}
+
+#section4  #sidenav-redes a span{
+
+  vertical-align: middle;
+}
+
+#section4  #sidenav-redes a {
+  /* background-color: rgba(255, 105, 105, 0.5); */
+  /* padding: 10px; */
+  text-decoration: none;
+  font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 35px;
+  font-size: 17px;
+  color: #34ccdf;
+  transition: 0.3s;
+
+}
+
+#section4  #sidenav-redes  a:hover {
+  color: #fff;
 }
 
 
-#section4 #gif-sobre img {
-  height:  200px;
+
+
+
+@media screen and (max-width: 1200px) {
+  
+  #section4 #gif-sobre {
+    height:  150px;
+  }
+
+  #section4  #sidenav-redes a {
+    font-weight: 600;
+    font-size: 15px;
+
+  }
+
+
+}
+
+
+
+
+@media (orientation:portrait) {
+  
+  #section4  #sidenav-redes {
+    height: auto;
+    display: block;
+    position: absolute;
+    top: auto;
+    right: auto;
+    left: 20px;
+    bottom: 20px;
+
+  }
+
+  #section4  #sidenav-redes a {
+    font-weight: 600;
+    font-size: 15px;
+
+  }
+
+
+}
+
+
+
+
+#section4  h1 {
+  
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 50px;
+  color: #fff;
+  text-align: left;
+
+}
+
+
+#section4  h1 span {
+  
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 50px;
+  color: #fff;
+  text-align: left;
+
+}
+
+
+
+
+#section4  h3 {
+  
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  text-align: left;
+
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  
+ 
+
+  #section4  h1 {
+    
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+
+  }
+
+
+  #section4  h1 span {
+    
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+
+  }
+
+
+
+  #section4  h3 {
+    
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+
+  }
+
+
 }
 
 
 
 
 
+#section4  .frase-mail a {
+  text-decoration: underline;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 30px;
+  color: #34ccdf;
+  transition: 0.3s;
+
+}
+
+#section4  .frase-mail  a:hover {
+  color: #fff;
+}
 
 
 
+
+
+@media screen and (max-width: 1200px) {
+  
+
+  #section4  .frase-mail a {
+    font-weight: 600;
+    font-size: 15px;
+
+  }
+
+
+}

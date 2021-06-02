@@ -3,6 +3,7 @@
 let navOpenState = false;
 const logoGifIn = document.getElementById('logo-gif-in');
 const logoGifOut = document.getElementById('logo-gif-out');
+const logoGifSobre = document.getElementById('gif-sobre');
 
 /*--------------------------------------------------------------
 #  Side navbar
@@ -314,6 +315,11 @@ var myFullpage = new fullpage('#fullpage', {
         //NOVA
         
         chageColors(nextIndex.index);
+
+        // play gif sobre
+        if(nextIndex.index ===4 ){
+          logoGifSobre.src=logoGifSobre.getAttribute('src');
+        }
     },
 });
 
@@ -349,60 +355,5 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 
 
-
-
-
-/*--------------------------------------------------------------
-#                       Expandable Video
---------------------------------------------------------------*/
-
-// 
-
-var Expand = (function() {
-  var tile = $('.strips-strip');
-  var tileLink = $('.strips-strip > .strip-content');
-  var tileText = tileLink.find('.strip-video');
-  var stripClose = $('.strip-close');
-  
-  var expanded  = false;
-
-  var open = function() {
-      
-    var tile = $(this).parent();
-
-      if (!expanded) {
-        tile.addClass('strips-strip--expanded');
-        stripClose.addClass('strip-close--show');
-        stripClose.css('transition', 'all .6s 1s cubic-bezier(0.23, 1, 0.32, 1)');
-        expanded = true;
-      } 
-    };
-  
-  var close = function() {
-    if (expanded) {
-      tile.removeClass('strips-strip--expanded');
-      stripClose.removeClass('strip-close--show');
-      stripClose.css('transition', 'all 0.2s 0s cubic-bezier(0.23, 1, 0.32, 1)')
-      expanded = false;
-    }
-  }
-    // expanding video
-    var bindActions = function() {
-      tileLink.on('click', open);	
-      tileLink.hover( open, close ) 
-      // stripClose.on('click', close);
-    };
-
-    var init = function() {
-      bindActions();
-    };
-
-    return {
-      init: init
-    };
-
-  }());
-
-Expand.init();
 
 
