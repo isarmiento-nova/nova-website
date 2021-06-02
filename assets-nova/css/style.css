@@ -1209,17 +1209,10 @@ cursor: pointer;
 
 
 #section3 {
-  /* background-color: #fff; */
-  /* height: 100%; */
-  /* width: 100% ; */
-  /* color: #5100e7; */
   
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
-  #section3 h1{
+#section3 h1{
   
   font-family: 'Montserrat';
   font-weight: 500;
@@ -1228,7 +1221,7 @@ cursor: pointer;
   
 }
 
-  #section3 h2{
+#section3 h2{
   
   font-family: 'Montserrat';
   font-weight: 600;
@@ -1237,25 +1230,24 @@ cursor: pointer;
   
 }
 
-  #section3 h2 img{
-  
-  margin-left: -30px;
-}
-
-  #section3 hr{
-  
-  border-top: 1px solid #ff4e15;
-  opacity: 1;
-  margin: 30px 0;
-  
-}
 
 
-  #section3 a{
+
+#section3 a , #section3 p{
   
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 15px;
+  color: #5100f1;
+  text-decoration: none;
+  
+}
+
+#section3 a span{
+  
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 13px;
   color: #5100f1;
   text-decoration: none;
   
@@ -1267,14 +1259,11 @@ cursor: pointer;
     font-size: 24px;
   }
   
-    #section3 h2{
+  #section3 h2{
     font-size: 16px;
     
   }
-  #section3 hr{
-    margin: 10px 0;
-    
-  }
+  
   #section3 a{
     font-weight: 500;
     font-size: 13px;
@@ -1283,6 +1272,70 @@ cursor: pointer;
 
 }
 
+
+#section3 .desarrollos-base{
+  height: 40%;
+  
+}
+
+#section3 .desarrollos-base .grupos-base{
+  height: 100%;
+  
+}
+
+
+#section3 .desarrollos-base .item-base{
+  /* background-color: #bea3f0; */
+  height: 25%;
+  width: 100%;
+  border-bottom: 1px solid #ff4e15;
+  position: relative;
+  
+}
+
+#section3 .desarrollos-base .item-titulo{
+  height: 25%;
+  width: 100%;
+  border-bottom: 1px solid #ff4e15;
+  position: relative;
+  
+}
+
+#section3 .desarrollos-base .item-base img{
+  height: 35px;
+  margin-right: 10px;
+}
+
+#section3 .item-titulo img{
+  position: absolute;
+  left: -35px;
+  height: 25px;
+}
+
+
+/* para celular */
+@media screen and (max-width: 1200px) {
+
+  #section3 .desarrollos-base{
+    height: 70%;
+    margin-top: 25px;
+    
+  }
+  #section3 .desarrollos-base .grupos-base{
+    height:45%;
+    
+  }
+  #section3 .desarrollos-base .item-base img{
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  #section3 .item-titulo img{
+    position: absolute;
+    left: -25px;
+    height: 20px;
+  }
+}
 
 
 
