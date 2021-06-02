@@ -537,8 +537,8 @@ canvas {
   #section0 .idiomas {
   
     position: absolute;
-    top: 80px;
-    right: 20px;
+    top: 60px;
+    right:15px;
   
   }
 }
@@ -726,6 +726,7 @@ canvas {
   color: #33ccd9;
   text-decoration: none;
   transition: 0.3s;
+  display: block;
 
 }
 
@@ -740,28 +741,28 @@ canvas {
   
   #section0 #carousel .lab360  h1 {
     font-weight: 600;
-    font-size: 65px;
+    font-size: 40px;
     text-align: center;
   
   }
   
     #section0 #carousel .lab360  h2 {
     font-weight: 500;
-    font-size: 19px;
+    font-size: 15px;
     text-align: center;
   
   }
   
     #section0 #carousel .lab360  h3 {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     margin-top: 5px;
   
   }
   
   #section0 #carousel .lab360  h4 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     text-align: center;
   
@@ -771,6 +772,8 @@ canvas {
 #section0 #carousel .lab360  a {
   font-weight: 500;
   font-size: 12px;
+  line-height: 12px;
+  
 
 }
   
@@ -1401,6 +1404,14 @@ cursor: pointer;
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: center; */
+  color: #fff;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+
+#section4 #gif-sobre img {
+  height:  200px;
 }
 
 
