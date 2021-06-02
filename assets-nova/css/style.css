@@ -262,6 +262,39 @@ padding-top: 100px;
 
 
 
+@media screen and (max-width: 1200px) {
+  
+.sidenav-parent #sidenav #sidenav-menu-content #sidenav-links ul li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+  
+.sidenav-parent #sidenav #sidenav-menu-content #sidenav-links ul li a {
+  padding: 5px;
+  font-size: 22px;
+}
+
+.sidenav-parent #sidenav #sidenav-menu-content #sidenav-redes a {
+  font-weight: 600;
+  font-size: 15px;
+
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 7px) ;
+  transform: rotate(-45deg) translate(-7px, 7px) ;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px) ;
+  transform: rotate(45deg) translate(-6px, -6px) ;
+}
+
+}
+
+
 
 
 
