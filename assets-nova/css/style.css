@@ -1112,7 +1112,7 @@ cursor: pointer;
 
 
 #section2 .icon-box .video-individual{
-  clip-path: circle(30px at center);
+  clip-path: circle(40px at center);
   transition: clip-path 0.9s ease;
   position: absolute;
 }
@@ -1126,6 +1126,12 @@ cursor: pointer;
 #section2 .icon-box .video-individual video{
   height: 100%;
   width: auto;
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+#section2 .icon-box:hover .video-individual video{
+  opacity: 1;
 }
 
 #section2 .icon-box .video-individual img{
@@ -1136,7 +1142,7 @@ cursor: pointer;
 @media screen and (max-width: 1200px) {
   
   #section2 .icon-box .video-individual{
-    clip-path: circle(25px at center);
+    clip-path: circle(32px at center);
   }
     
   #section2 .icon-box .video-individual video{
@@ -1158,7 +1164,7 @@ cursor: pointer;
   text-decoration: none;
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 20px;
+  font-size: 15px;
   color: #fff;
   transition: color 0.3s;
 
@@ -1183,7 +1189,7 @@ cursor: pointer;
 @media screen and (max-width: 1200px) {
   #section2 .icon-box  h1{
     font-weight: 600;
-    font-size: 15px;
+    font-size: 12px;
     
   }
 
