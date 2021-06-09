@@ -298,7 +298,7 @@ var myFullpage = new fullpage('#fullpage', {
   //sectionsColor: ['#00000000', '#00000000', '#00000000', '#00000000', '#00000000'],
   anchors: ['inicio', 'nosotros', 'experiencia', 'portafolio', 'contacto'],
   menu: '#menu',
-  continuousVertical: true,
+  continuousVertical: false,
   afterLoad: function(anchorLink, index){
         // console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
         // console.log(JSON.stringify(index, null, 4));
