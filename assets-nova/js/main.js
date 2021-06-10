@@ -375,13 +375,6 @@ $('#carousel').on('slid.bs.carousel', function() {
   }
 });
 
-// Desactiva carousel automatico
-
-$('#carousel').carousel( {
-  interval: false,
-});
-
-
 
 
 

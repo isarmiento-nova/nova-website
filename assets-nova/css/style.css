@@ -1311,25 +1311,23 @@ cursor: pointer;
 
 
 #section3 {
-  
+  font-size: 1.3vw;
 }
 
 #section3 h1{
   
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 40px;
   color: #5100f1;
-  
+  font-size: 2em;
 }
 
 #section3 h2{
   
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 22px;
   color: #ff4e15;
-  
+  font-size: 1.2em;
 }
 
 
@@ -1339,7 +1337,7 @@ cursor: pointer;
   
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 15px;
+  font-size: 1em;
   color: #5100f1;
   text-decoration: none;
   
@@ -1349,7 +1347,7 @@ cursor: pointer;
   
   font-family: 'Montserrat';
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.8em;
   color: #5100f1;
   text-decoration: none;
   
@@ -1362,19 +1360,19 @@ cursor: pointer;
   }
   
   #section3 h2{
-    font-size: 16px;
+    font-size: 17px;
     
   }
   
   #section3 p{
     font-weight: 500;
-    font-size: 13px;
+    font-size: 15px;
     
   }
   #section3 p span{
     
     font-weight: 400;
-    font-size: 10px;
+    font-size: 13px;
     
   }
 
@@ -1396,7 +1394,8 @@ cursor: pointer;
 }
 
 #section3 .desarrollos-base .item-base img{
-  height: 35px;
+  max-width: 15%;
+  height: auto;
   margin-right: 10px;
 }
 
@@ -1409,10 +1408,25 @@ cursor: pointer;
 
 /* para celular */
 @media screen and (max-width: 1200px) {
-
+  
   #section3 .desarrollos-base{
     height: 70%;
     margin-top: 25px;
+    
+  }
+
+  #section3 .desarrollos-base .item-base{
+    /* background-color: #bea3f0; */
+    min-height: 65px;
+    border-bottom: 1px solid #ff4e15;
+    position: relative;
+    
+  }
+
+  #section3 .desarrollos-base .item-titulo{
+    min-height: 65px;
+    border-bottom: 1px solid #ff4e15;
+    position: relative;
     
   }
 
@@ -1606,15 +1620,15 @@ cursor: pointer;
 #section4 .container-mail {
   background-color: #fff;
   border-radius: 30px;
-  padding: 3px 25px;
+  padding: 3px 25px 5px;
   box-shadow: 4px 5px 10px 2px rgb(0 0 0 / 30%);
 }
 
 
 #section4  .frase-mail a {
-  text-decoration: underline;
+  border-bottom: solid 2px rgb(81, 0, 231);
   font-family: 'Montserrat';
-  font-weight: 600;
+  font-weight: 400;
   font-size: 28px;
   color: rgb(81, 0, 231);
   transition: 0.3s;
@@ -1623,6 +1637,7 @@ cursor: pointer;
 
 #section4  .frase-mail  a:hover {
   color: #ff4e15;
+  border-color: #ff4e15;
 }
 
 
