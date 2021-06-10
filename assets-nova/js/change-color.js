@@ -109,7 +109,7 @@ function handleEvent(e) {
       duration: anime.random(1000,1300),
       complete: removeAnimation
     });
-    animations.push(fillAnimation, rippleAnimation, particlesAnimation);
+    animations.push(fillAnimation, rippleAnimation);
 }
 
 function extend(a, b){

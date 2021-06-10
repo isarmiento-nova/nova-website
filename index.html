@@ -17,6 +17,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400i,400,500,600,700,700i|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+
 
     <!-- CSS -->
     <link href="assets-nova/css/bootstrap.css" rel="stylesheet">
@@ -70,7 +73,7 @@
     </nav>
 
 <!-- Elementos de todas las vistas -->
-    <div class="flecha-top" href="javascript:void(0)" onclick="closeNav()">
+    <div class="flecha-top d-none" href="javascript:void(0)" onclick="closeNav()">
         <a href="#inicio"><img  src="assets-nova/img/icon-flecha-top.png"   alt="Flecha top" height="25px"></a>
     </div>
 
@@ -87,7 +90,7 @@
 <!-- Home -->
         <div class="section " id="section0">
             
-            <canvas id="c" style="margin-left: -50px; "></canvas>
+            <canvas id="c"></canvas>
 
             <div class="idiomas" style="z-index: 11;">
                 <a class="active" href="#"><span>ESP</span>
@@ -99,9 +102,20 @@
             </div>
 
             <!-- Carousel -->
-            <div id="carousel" class="carousel slide" data-ride="carousel" >
+            <div id="carousel" class="carousel slide" data-interval="false" >
                 
-                <div class="carousel-inner "  style=" height: 100%;" >
+                <div class="carousel-indicators mb-4">
+                    <div class="position-relative">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <div class="container-arrow position-relative">
+                            <div class="carousel-arrow arrow-first"></div>
+                            <div class="carousel-arrow arrow-second"></div>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="carousel-inner pb-4"  style=" height: 100%;" >
 
                     <div class="carousel-item active" id="carousel-1" style=" height: 100%;" >
 
@@ -126,7 +140,9 @@
                                         <img src="assets-nova/img/home/logo_nova.png" alt="logo_nova" class="img-fluid mt-4 mt-xl-5"> 
                                     </div>
                                 </div>
-                            
+                                <div class="row py-5">
+                                    <h3><b>Hacemos productos digitales</b></h3>
+                                </div>
                                 <div class="row mb-5 pb-5">
                                     <h6>Proyecto spin off de la</h6>
                                     <h5>Universidad Nacional de Colombia</h5>
@@ -167,6 +183,7 @@
                         </div>
 
                     </div>
+                    
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -180,7 +197,6 @@
                 </button>
 
             </div>
-
 
         </div>
 
@@ -309,62 +325,62 @@
 
             <div class="container-fluid align-content-center align-items-center"  style="height: 100%;">
 
-                <div class="row  d-flex  justify-content-center align-items-center align-content-center"  style="height: 100%; ">
+                <div class="row  d-flex  justify-content-end align-items-center align-content-center"  style="height: 100%; ">
 
-                    <div class="col-10 mb-0 mb-lg-5 d-flex justify-content-center justify-content-lg-start align-items-center align-content-center" >
+                    <div class="col-11 mb-0 mb-lg-5 d-flex justify-content-center justify-content-lg-start align-items-center align-content-center" >
                         <h1 class="text-center text-lg-start">Portafolio<br>de Servicios</h1>
                     </div>
 
-                    <div class="col-10 d-flex flex-wrap justify-content-center justify-content-lg-end desarrollos-base" >
+                    <div class="col-11 col-xl-9 desarrollos-base" >
+                        <div class="row">
+                            <div class="col-12 col-md-5 mx-3 mx-xl-4 mb-5 mb-md-0 text-start text-lg-start grupos-base">
+                                <div class="col-10 col-md-12 item-titulo d-flex align-items-center justify-content-start justify-content-md-start">
+                                    <img src="assets-nova/img/icon-cuadradito.png" alt="icono linkedin">
+                                    <h2>Desarrollo tecnológico:</h2>
+                                </div>
+                                <a  href="#" class="col-10 col-md-12 item-base d-flex align-items-center justify-content-start">
+                                    <img   src="assets-nova/img/portafolio/icon-port-1.png" alt="icono linkedin">
+                                    <p>Diseño y desarrollo web</p>
+                                </a>
+                                <a href="#" class="col-10 col-md-12 item-base d-flex align-items-center justify-content-start">
+                                    <img   src="assets-nova/img/portafolio/icon-port-2.png" alt="icono linkedin">
+                                    <p>Plataformas tecnológicas</p>
+                                </a>
+                                <a href="#" class="col-10 col-md-12 item-base d-flex align-items-center justify-content-start">
+                                    <img   src="assets-nova/img/portafolio/icon-port-3.png" alt="icono linkedin">
+                                    <p>Aplicativos móviles</p>
+                                </a>
 
-                        <div class="col-12 col-lg-4  col-xxl-3 d-flex flex-column justify-content-center justify-content-lg-start mx-4 text-start text-lg-start grupos-base">
-                            <div class="col-12 col-xl-3 py-1 item-titulo d-flex align-items-center justify-content-start justify-content-md-start">
-                                <img src="assets-nova/img/icon-cuadradito.png" alt="icono linkedin">
-                                <h2>Desarrollo tecnológico:</h2>
                             </div>
-                            <a  href="#" class="col-12 col-xl-3 py-1 item-base d-flex align-items-center justify-content-start">
-                                <img   src="assets-nova/img/portafolio/icon-port-1.png" alt="icono linkedin">
-                                <p>Diseño y desarrollo web</p>
-                            </a>
-                            <a href="#" class="col-12 col-xl-3 py-1 item-base d-flex align-items-center justify-content-start">
-                                <img   src="assets-nova/img/portafolio/icon-port-2.png" alt="icono linkedin">
-                                <p>Plataformas tecnológicas</p>
-                            </a>
-                            <a href="#" class="col-12 col-xl-3 py-1 item-base d-flex align-items-center justify-content-start">
-                                <img   src="assets-nova/img/portafolio/icon-port-3.png" alt="icono linkedin">
-                                <p>Aplicativos móviles</p>
-                            </a>
 
-                        </div>
+                            <div class="col-12 col-md-5 mx-3 mx-xl-4 text-start text-lg-start grupos-base" >
+                                <div class="col-10 col-md-12 item-titulo d-flex align-items-center justify-content-start justify-content-md-start">
+                                    <img src="assets-nova/img/icon-cuadradito.png" alt="icono linkedin">
+                                    <h2>Desarrollo de nuevos medios:</h2>
+                                </div>
+                                <a href="#" class="col-10 col-md-12 item-base d-flex align-items-center justify-content-start">
+                                    <img   src="assets-nova/img/portafolio/icon-port-4.png" alt="icono linkedin">
+                                    <p>Producción audiovisual<br><span>(imagen, audio y video)</span></p>
+                                </a>
+                                <a href="#" class="col-10 col-md-12 item-base d-flex align-items-center justify-content-start">
+                                    <img   src="assets-nova/img/portafolio/icon-port-5.png" alt="icono linkedin">
+                                    <p>Realidad extendida</p>
+                                </a>
+                                <a href="#" class="col-10 col-md-12 item-base d-flex align-items-center justify-content-start">
+                                    <img   src="assets-nova/img/portafolio/icon-port-6.png" alt="icono linkedin">
+                                    <p>Tecnología para el aprendizaje</p>
+                                </a>
+                                <!-- <h2>Desarrollo de nuevos medios:</h2>
+                                <hr>
+                                <a href="#"><img   src="assets-nova/img/portafolio/icon-port-4.png" alt="icono linkedin" height="35px" style="margin-right: 10px;"><p>Producción audiovisual<br><span>(imagen, audio y video)</p></a>
+                                <hr>
+                                <a href="#"><img   src="assets-nova/img/portafolio/icon-port-5.png" alt="icono linkedin" height="35px" style="margin-right: 10px;"><span>Realidad extendida<br>&nbsp;</span></a>
+                                <hr>
+                                <a href="#"><img   src="assets-nova/img/portafolio/icon-port-6.png" alt="icono linkedin" height="35px" style="margin-right: 10px;"><span>Tecnología para el aprendizaje<br>&nbsp;</span></a>
+                                <hr> -->
 
-                        <div class="col-12 col-lg-4  col-xxl-3 d-flex flex-column justify-content-center justify-content-lg-start mx-4 text-start text-lg-start grupos-base" >
-                            <div class="col-12 col-xl-3 py-1 item-titulo d-flex align-items-center justify-content-start justify-content-md-start">
-                                <img src="assets-nova/img/icon-cuadradito.png" alt="icono linkedin">
-                                <h2>Desarrollo de nuevos medios:</h2>
                             </div>
-                            <a href="#" class="col-12 col-xl-3 py-1 item-base d-flex align-items-center justify-content-start">
-                                <img   src="assets-nova/img/portafolio/icon-port-4.png" alt="icono linkedin">
-                                <p>Producción audiovisual<br><span>(imagen, audio y video)</span></p>
-                            </a>
-                            <a href="#" class="col-12 col-xl-3 py-1 item-base d-flex align-items-center justify-content-start">
-                                <img   src="assets-nova/img/portafolio/icon-port-5.png" alt="icono linkedin">
-                                <p>Realidad extendida</p>
-                            </a>
-                            <a href="#" class="col-12 col-xl-3 py-1 item-base d-flex align-items-center justify-content-start">
-                                <img   src="assets-nova/img/portafolio/icon-port-6.png" alt="icono linkedin">
-                                <p>Tecnología para el aprendizaje</p>
-                            </a>
-                            <!-- <h2>Desarrollo de nuevos medios:</h2>
-                            <hr>
-                            <a href="#"><img   src="assets-nova/img/portafolio/icon-port-4.png" alt="icono linkedin" height="35px" style="margin-right: 10px;"><p>Producción audiovisual<br><span>(imagen, audio y video)</p></a>
-                            <hr>
-                            <a href="#"><img   src="assets-nova/img/portafolio/icon-port-5.png" alt="icono linkedin" height="35px" style="margin-right: 10px;"><span>Realidad extendida<br>&nbsp;</span></a>
-                            <hr>
-                            <a href="#"><img   src="assets-nova/img/portafolio/icon-port-6.png" alt="icono linkedin" height="35px" style="margin-right: 10px;"><span>Tecnología para el aprendizaje<br>&nbsp;</span></a>
-                            <hr> -->
-
                         </div>
-
                     </div>
                     
                 </div>
@@ -395,7 +411,9 @@
                         <img src="assets-nova/img/contacto/sobre_gif6.gif" alt="gif sobre"  id="gif-sobre" class="img-fluid"> 
                         <div class="d-flex flex-column justify-content-center align-items-center frase-mail">
                             <h1 class="text-center">Ahora sí, <span> trabajemos juntos...</span></h1>
-                            <a href="mailto:info@novatransmedia.com">info@novatransmedia.com</a>
+                            <div class="container-mail mt-2">
+                                <a href="mailto:info@novatransmedia.com">info@<b>nova</b>transmedia.com</a>
+                            </div>
                         </div>
                     </div>
                 

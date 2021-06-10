@@ -58,11 +58,62 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
+.carousel-indicators [data-bs-target]{
+  width: .6em;
+  height: .6em;
+  border-radius: 100%;
+}
 
 
+.container-arrow{
+  min-height: 2.2em;
+}
 
+.carousel-arrow {
+  opacity: 0;
+  position: absolute;
+  left: 22%;
+  top: 100%;
 
-
+  transform-origin: 50% 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.arrow-first {
+  animation: arrow-movement 2s ease-in-out infinite;
+}
+.arrow-second {
+  animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+.carousel-arrow:before, .carousel-arrow:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+}
+.carousel-arrow:before {
+  transform: rotate(45deg) translateX(-23%);
+  transform-origin: top left;
+}
+.carousel-arrow:after {
+  transform: rotate(-45deg) translateX(23%);
+  transform-origin: top right;
+}
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 45%;
+ }
+  70% {
+    opacity: 1;
+ }
+  100% {
+    opacity: 0.2;
+ }
+}
 
 
 /*----------------------------------------------------------------------------------------------------------------------------
@@ -249,13 +300,13 @@ padding-top: 100px;
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 17px;
-  color: #34ccdf;
+  color: #fff;
   transition: 0.3s;
 
 }
 
 .sidenav-parent #sidenav #sidenav-menu-content #sidenav-redes  a:hover {
-  color: #fff;
+  color: #34ccdf;
 }
 
 
@@ -484,7 +535,7 @@ padding-top: 100px;
   /* background-color: #ff4e15; */
   position: absolute;
   bottom: 25px;
-  right: 55px;
+  right: 1.5%;
   z-index: 11;
 
 }
@@ -523,6 +574,7 @@ canvas {
   background-color: #280250;
   transition: background-color 0.5s ease;
   position: absolute;
+  right: 0;
 }
 
   #section0 .idiomas {
@@ -632,7 +684,7 @@ canvas {
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
-  color: #33ccd9;
+  color: #fff;
   transition: 0.3s;
   margin-bottom: 5px;
 
@@ -643,7 +695,17 @@ canvas {
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 18px;
-  color: #33ccd9;
+  color: #fff;
+  transition: 0.3s;
+
+}
+
+#section0 #carousel h3 {
+  
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #fff;
   transition: 0.3s;
 
 }
@@ -707,13 +769,12 @@ canvas {
 }
 
 #section0 #carousel .lab360  h4 {
-  
-  font-style: italic;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   color: #ff4e15;
-  font-weight: 400;
+  font-style: italic;
   text-align: left;
+  font-weight: 600;
 
 }
 
@@ -723,7 +784,7 @@ canvas {
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 15px;
-  color: #33ccd9;
+  color: #fff;
   text-decoration: none;
   transition: 0.3s;
   display: block;
@@ -731,8 +792,7 @@ canvas {
 }
 
   #section0 #carousel .lab360  a:hover {
-  
-  color: #ff4e15;
+  border-bottom: 2.5px solid #fff;
 
 }
 
@@ -1133,9 +1193,9 @@ cursor: pointer;
 
 
 
-#section2 .icon-box:hover {
+/* #section2 .icon-box:hover {
   transform: translateY(-5px);
-}
+} */
 
 @media screen and (max-width: 1200px) {
   
@@ -1160,10 +1220,10 @@ cursor: pointer;
 
 
 #section2 .icon-box .video-individual video{
-  height: 100%;
-  width: auto;
+  max-width: 100%;
   opacity: 0.3;
   transition: 0.5s;
+  transform: scale(4);
 }
 
 #section2 .icon-box:hover .video-individual video{
@@ -1257,7 +1317,7 @@ cursor: pointer;
 #section3 h1{
   
   font-family: 'Montserrat';
-  font-weight: 500;
+  font-weight: 600;
   font-size: 40px;
   color: #5100f1;
   
@@ -1320,30 +1380,16 @@ cursor: pointer;
 
 }
 
-
-#section3 .desarrollos-base{
-  height: 40%;
-  
-}
-
-#section3 .desarrollos-base .grupos-base{
-  height: 100%;
-  
-}
-
-
 #section3 .desarrollos-base .item-base{
   /* background-color: #bea3f0; */
-  height: 25%;
-  width: 100%;
+  min-height: 5em;
   border-bottom: 1px solid #ff4e15;
   position: relative;
   
 }
 
 #section3 .desarrollos-base .item-titulo{
-  height: 25%;
-  width: 100%;
+  min-height: 5em;
   border-bottom: 1px solid #ff4e15;
   position: relative;
   
@@ -1369,10 +1415,7 @@ cursor: pointer;
     margin-top: 25px;
     
   }
-  #section3 .desarrollos-base .grupos-base{
-    height:45%;
-    
-  }
+
   #section3 .desarrollos-base .item-base img{
     height: 25px;
     margin-right: 10px;
@@ -1426,13 +1469,13 @@ cursor: pointer;
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 17px;
-  color: #34ccdf;
+  color: #fff;
   transition: 0.3s;
 
 }
 
 #section4  #sidenav-redes  a:hover {
-  color: #fff;
+  text-shadow: 0px 1px 8px #000;;
 }
 
 
@@ -1560,7 +1603,12 @@ cursor: pointer;
 }
 
 
-
+#section4 .container-mail {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 3px 25px;
+  box-shadow: 4px 5px 10px 2px rgb(0 0 0 / 30%);
+}
 
 
 #section4  .frase-mail a {
@@ -1568,13 +1616,13 @@ cursor: pointer;
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 28px;
-  color: #34ccdf;
+  color: rgb(81, 0, 231);
   transition: 0.3s;
-
+  
 }
 
 #section4  .frase-mail  a:hover {
-  color: #fff;
+  color: #ff4e15;
 }
 
 

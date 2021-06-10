@@ -225,60 +225,64 @@ var body = document.getElementsByTagName("BODY")[0];
 // var body = document.getElementById("c");
   function chageColors(index) {
     
-        if (index === 4) {
-          body.style.backgroundColor ='#5100e7';
-          //cambiar color de menu
-          document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255');
-           $(".flecha-top a img").removeClass("filtro-flecha-top");
+      if (index === 4) {
+        body.style.backgroundColor ='#5100e7';
+        $(".flecha-top").removeClass("d-none");
+        $(".icon-whatsapp").css( "right", "55px" );
+        
+        //cambiar color de menu
+        document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255');
+          
+        $(".flecha-top a img").removeClass("filtro-flecha-top");
 
-           $("#sidenav-logo img").removeClass("color-logo-naranja");
-           $("#sidenav-menu div").css('background-color', '#fff');
-
-
+        $("#sidenav-logo img").removeClass("color-logo-naranja");
+        $("#sidenav-menu div").css('background-color', '#fff');
 
       } else if (index === 3) {
         body.style.backgroundColor ='#fff';
+        $(".flecha-top").removeClass("d-none");
+        $(".icon-whatsapp").css( "right", "55px" );
+
         //cambiar color de menu
-          document.querySelector(':root').style.setProperty('--colorBorde', '255,78,21');
-           $(".flecha-top a img").addClass("filtro-flecha-top");
+        document.querySelector(':root').style.setProperty('--colorBorde', '255,78,21');
+        $(".flecha-top a img").addClass("filtro-flecha-top");
 
-         $("#sidenav-logo img").addClass("color-logo-naranja");
-         $("#sidenav-menu div").css('background-color', '#ff4e15');
-
+        $("#sidenav-logo img").addClass("color-logo-naranja");
+        $("#sidenav-menu div").css('background-color', '#ff4e15');
 
       } else if (index === 2) {
         body.style.backgroundColor ='#260031';
-          //cambiar color de menu
-          document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255');
-           $(".flecha-top a img").removeClass("filtro-flecha-top");
+        $(".flecha-top").removeClass("d-none");
+        $(".icon-whatsapp").css( "right", "55px" );
+        
+        //cambiar color de menu
+        document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255');
+        $(".flecha-top a img").removeClass("filtro-flecha-top");
 
-           $("#sidenav-logo img").removeClass("color-logo-naranja");
-           $("#sidenav-menu div").css('background-color', '#fff');
-
-
+        $("#sidenav-logo img").removeClass("color-logo-naranja");
+        $("#sidenav-menu div").css('background-color', '#fff');
 
       } else if (index === 1) {
         body.style.backgroundColor ='#ff4e15';
-          //cambiar color de menu
-          document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255');
-           $(".flecha-top a img").removeClass("filtro-flecha-top");
+        $(".flecha-top").removeClass("d-none");
+        $(".icon-whatsapp").css( "right", "55px" );
+        
+        //cambiar color de menu
+        document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255');
+        $(".flecha-top a img").removeClass("filtro-flecha-top");
 
-           $("#sidenav-logo img").removeClass("color-logo-naranja");
-           $("#sidenav-menu div").css('background-color', '#fff');
-
-
+        $("#sidenav-logo img").removeClass("color-logo-naranja");
+        $("#sidenav-menu div").css('background-color', '#fff');
 
       } else if (index === 0) {
         body.style.backgroundColor = '#280250';
-          //cambiar color de menu
-          document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255');
-           $(".flecha-top a img").removeClass("filtro-flecha-top");
+        $(".flecha-top").addClass("d-none");
+        $(".icon-whatsapp").css( "right", "1.5%" );
+        //cambiar color de menu
+        document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255');
 
-           $("#sidenav-logo img").removeClass("color-logo-naranja");
-           $("#sidenav-menu div").css('background-color', '#fff');
-
-
-
+         $("#sidenav-logo img").removeClass("color-logo-naranja");
+         $("#sidenav-menu div").css('background-color', '#fff');
       }
   }
 
@@ -347,6 +351,41 @@ window.transitionToPage = function(href, colorNextPage) {
 document.addEventListener('DOMContentLoaded', function(event) {
   document.querySelector('body').style.opacity = 1
 })
+
+/*--------------------------------------------------------------
+#                      Carousel
+--------------------------------------------------------------*/
+
+// Oculta los botones anterior y siguiente al principio y final de cada diapositiva
+
+var totalItems = $('#carousel .carousel-item').length;
+var currentIndex = $('#carousel .carousel-item.active').index() + 1;
+
+$('#carousel .carousel-control-prev').addClass('d-none');
+
+$('#carousel').on('slid.bs.carousel', function() {
+  currentIndex = $('#carousel .carousel-item.active').index() + 1;
+  if(currentIndex == totalItems){
+    $('#carousel .carousel-control-next').addClass('d-none');
+    $('#carousel .carousel-control-prev').removeClass('d-none');
+    console.log(currentIndex)
+  }else{
+    $('#carousel .carousel-control-prev').addClass('d-none');
+    $('#carousel .carousel-control-next').removeClass('d-none');
+  }
+});
+
+// Desactiva carousel automatico
+
+$('#carousel').carousel( {
+  interval: false,
+});
+
+
+
+
+
+
 
 
 
