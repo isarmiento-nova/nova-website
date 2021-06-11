@@ -946,7 +946,7 @@ canvas {
   /* opacity: 0; */
   overflow-x: hidden;
   overflow-y: hidden;
-  max-width: 82%;
+  width: 82%;
 }
 
 #section1 .palabras #palabras-base  #palabra-oculta{
@@ -1026,7 +1026,7 @@ canvas {
 @media screen and (max-width: 500px) {
   
   #section1 .palabras #palabras-base {
-    max-width: 100%;
+    width: 100%;
   }
   #section1 .palabras h1{
     padding-bottom: 2px;
