@@ -384,9 +384,9 @@ $('#carousel').on('slid.bs.carousel', function() {
 // Detiene animación del botón contactenos
 
 $(".container-mail a" ).hover(function() {
-  $( '.container-mail' ).removeClass( 'animate__animated' );
+  $( '.container-mail' ).css( "transform","scale(1.09)" );
 },function() {
-  $('.container-mail' ).addClass( 'animate__animated' );
+  $( '.container-mail' ).css( "transform","none" );
 });
 
 
