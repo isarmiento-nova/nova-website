@@ -53,8 +53,12 @@ function splitLetters(word) {
   var letters = [];
   for (var i = 0; i < content.length; i++) {
     var letter = document.createElement('span');
+    var spacing = content.charAt(i);
     letter.className = 'letter';
     letter.innerHTML = content.charAt(i);
+    if(spacing === '-'){
+      letter.innerHTML = spacing.replace('-', '&nbsp;');;
+    }
     word.appendChild(letter);
     letters.push(letter);
   }
@@ -63,4 +67,4 @@ function splitLetters(word) {
 }
 
 changeWord();
-setInterval(changeWord, 2500);
+setInterval(changeWord, 3200);

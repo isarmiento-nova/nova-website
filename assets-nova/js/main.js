@@ -239,6 +239,19 @@ var body = document.getElementsByTagName("BODY")[0];
         $("#sidenav-menu div").css('background-color', '#fff');
 
       } else if (index === 3) {
+
+        body.style.backgroundColor ='#260031';
+        $(".flecha-top").removeClass("d-none");
+        $(".icon-whatsapp").css( "right", "55px" );
+        
+        //cambiar color de menu
+        document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255');
+        $(".flecha-top a img").removeClass("filtro-flecha-top");
+
+        $("#sidenav-logo img").removeClass("color-logo-naranja");
+        $("#sidenav-menu div").css('background-color', '#fff');
+       
+      } else if (index === 2) {
         body.style.backgroundColor ='#fff';
         $(".flecha-top").removeClass("d-none");
         $(".icon-whatsapp").css( "right", "55px" );
@@ -250,19 +263,8 @@ var body = document.getElementsByTagName("BODY")[0];
         $("#sidenav-logo img").addClass("color-logo-naranja");
         $("#sidenav-menu div").css('background-color', '#ff4e15');
 
-      } else if (index === 2) {
-        body.style.backgroundColor ='#260031';
-        $(".flecha-top").removeClass("d-none");
-        $(".icon-whatsapp").css( "right", "55px" );
-        
-        //cambiar color de menu
-        document.querySelector(':root').style.setProperty('--colorBorde', '255,255,255');
-        $(".flecha-top a img").removeClass("filtro-flecha-top");
-
-        $("#sidenav-logo img").removeClass("color-logo-naranja");
-        $("#sidenav-menu div").css('background-color', '#fff');
-
       } else if (index === 1) {
+
         body.style.backgroundColor ='#ff4e15';
         $(".flecha-top").removeClass("d-none");
         $(".icon-whatsapp").css( "right", "55px" );
@@ -356,7 +358,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 #                      Carousel
 --------------------------------------------------------------*/
 
-// Oculta los botones anterior y siguiente al principio y final de cada diapositiva
+// Oculta los botones anterior - siguiente de la primera y ultima diapositiva
 
 var totalItems = $('#carousel .carousel-item').length;
 var currentIndex = $('#carousel .carousel-item.active').index() + 1;
@@ -373,6 +375,18 @@ $('#carousel').on('slid.bs.carousel', function() {
     $('#carousel .carousel-control-prev').addClass('d-none');
     $('#carousel .carousel-control-next').removeClass('d-none');
   }
+});
+
+/*--------------------------------------------------------------
+#                      Contactenos
+--------------------------------------------------------------*/
+
+// Detiene animación del botón contactenos
+
+$(".container-mail a" ).hover(function() {
+  $( '.container-mail' ).removeClass( 'animate__animated' );
+},function() {
+  $('.container-mail' ).addClass( 'animate__animated' );
 });
 
 
