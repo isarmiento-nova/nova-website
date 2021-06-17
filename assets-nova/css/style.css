@@ -1378,8 +1378,8 @@ cursor: pointer;
   
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 1em;
-  color: #5100f1;
+  font-size: 0.8em;
+  color: #260031;
   text-decoration: none;
   
 }
@@ -1389,10 +1389,56 @@ cursor: pointer;
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 0.8em;
-  color: #5100f1;
+  color: #260031;
   text-decoration: none;
   
 }
+
+.hidden{
+  visibility:hidden;
+  opacity: 0;
+  height: 0rem;
+  transition: all 1s linear;
+}
+
+.show{
+  visibility:hidden;
+  opacity: 0;
+  height: 0rem;
+  transition: all 1s linear;
+}
+
+
+
+
+
+.blocked{
+  display: none !important;
+}
+
+.show-texts{
+  animation: change 2s forwards;
+}
+
+
+
+.color-change-and-back{
+  animation: change 2s forwards;
+}
+
+@keyframes channge{
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color:#260031;
+  }
+  100%{
+    background-color: white;
+  }
+}
+
+
 
 
 @media screen and (max-width: 1200px) {
@@ -1435,7 +1481,7 @@ cursor: pointer;
 }
 
 #section2 .desarrollos-base .item-base img{
-  max-width: 15%;
+  max-width: 55%;
   height: auto;
   margin-right: 10px;
 }
@@ -1444,6 +1490,10 @@ cursor: pointer;
   position: absolute;
   left: -35px;
   height: 25px;
+}
+
+.column-flex{
+  flex-direction: column;
 }
 
 
@@ -1472,7 +1522,8 @@ cursor: pointer;
   }
 
   #section2 .desarrollos-base .item-base img{
-    height: 25px;
+    width: 30%;
+    height: auto;
     margin-right: 10px;
   }
 
@@ -1659,7 +1710,6 @@ cursor: pointer;
 
 
 #section4 .container-mail {
-  border: solid 3px #fff;
   padding: 3px 30px 5px;
 }
 
