@@ -37,6 +37,57 @@
   animation: toText_texts-reverse 3s forwards;
 }
 
+.portafolio-arrow{
+  background: rgb(255,78,21);
+  background: radial-gradient(circle, rgba(255,78,21,1) 70%, rgba(255,78,21,0) 70%);  
+}
+
+
+.hide-arrow{
+  animation: arrow-hide .5s forwards;
+}
+
+.show-arrow{
+  animation: arrow-appear .5s forwards;
+}
+
+@keyframes arrow-hide{
+  0%{
+    transform: scale(1);
+  }
+  40%{
+    transform: scale(1.5);
+  }
+  95%{
+    transform: scale(0.1);
+    display: block;
+  }
+  100%{
+    transform: scale(0);
+    display: none;
+  }
+}
+
+@keyframes arrow-appear {
+  0%{
+    transform: scale(0);
+    display: none;
+  }
+  5%{
+    transform: scale(0.1);
+    display: block;
+  }
+  60%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+    
+  }
+}
+
+
+
 @keyframes toText_icons{
   0%{
     opacity: 1;
@@ -194,6 +245,9 @@
     background-size: 0% 0%;    
     
   }
-  
+}
 
+.portafolio-text p{
+  font-size: 1rem;
+  text-align: start;
 }
