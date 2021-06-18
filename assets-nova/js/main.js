@@ -394,10 +394,6 @@ $('#carousel-portafolio').on('slid.bs.carousel', function () {
 
   }
 });
-
-$('#carousel-portafolio').carousel({
-  interval: false,
-});
 /*--------------------------------------------------------------
 #                      Contactenos
 --------------------------------------------------------------*/
