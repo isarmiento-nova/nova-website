@@ -1359,8 +1359,12 @@ cursor: pointer;
   
   font-family: 'Montserrat';
   font-weight: 600;
-  color: #5100f1;
-  font-size: 2em;
+  color: #ff4e15;
+  font-size: 1.6em;
+}
+
+.hight-h1{
+  font-size: 1.8em;
 }
 
 #section2 h2{
@@ -1375,8 +1379,8 @@ cursor: pointer;
 #section2 p{
   
   font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 1.2em;
+  font-weight: 500;
+  font-size: .9em;
   color: #260031;
   text-decoration: none;
   
@@ -1445,6 +1449,10 @@ cursor: pointer;
   #section2 h1{
     font-size: 24px;
   }
+
+  .hight-h1{
+    font-size: 28px;
+  }
   
   #section2 h2{
     font-size: 17px;
@@ -1459,7 +1467,7 @@ cursor: pointer;
   #section2 p span{
     
     font-weight: 400;
-    font-size: 13px;
+    font-size: 10px;
     
   }
 
@@ -1711,6 +1719,10 @@ cursor: pointer;
 
 #section4 .container-mail {
   padding: 3px 30px 5px;
+}
+
+.container-mail:hover{
+  transform: scale(1.1);
 }
 
 
