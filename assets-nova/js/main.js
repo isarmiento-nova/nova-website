@@ -380,7 +380,7 @@ $('#carousel').on('slid.bs.carousel', function () {
 var totalItems2 = $('#carousel-portafolio .carousel-item').length;
 var currentIndex2 = $('#carousel-portafolio .carousel-item.active').index() + 1;
 $('#carousel-portafolio .carousel-control-prev').addClass('hide-arrow');
-
+$('buttons-portafolio').addClass('buttons-portafolio-orange');
 $('#carousel-portafolio').on('slid.bs.carousel', function () {
   currentIndex2 = $('#carousel-portafolio .carousel-item.active').index() + 1;
   if (currentIndex2 == totalItems2) {
@@ -388,6 +388,9 @@ $('#carousel-portafolio').on('slid.bs.carousel', function () {
     $('#carousel-portafolio .carousel-control-next').removeClass('show-arrow');
     $('#carousel-portafolio .carousel-control-prev').removeClass('hide-arrow');
     $('#carousel-portafolio .carousel-control-prev').addClass('show-arrow');
+    $('#buttons-portafolio').addClass('buttons-portafolio-white');
+    $('#buttons-portafolio').removeClass('buttons-portafolio-orange');
+
     console.log(currentIndex2)
   } else {
     $('#carousel-portafolio .carousel-control-prev').addClass('hide-arrow');
@@ -395,7 +398,14 @@ $('#carousel-portafolio').on('slid.bs.carousel', function () {
     $('#carousel-portafolio .carousel-control-next').removeClass('hide-arrow');
     $('#carousel-portafolio .carousel-control-next').addClass('show-arrow');
     $('#carousel .carousel-control-next').removeClass('d-none');
+    $('#buttons-portafolio').removeClass('buttons-portafolio-white');
+    $('#buttons-portafolio').addClass('buttons-portafolio-orange');
+
   }
+});
+
+$('#carousel-portafolio').carousel({
+  interval: false,
 });
 /*--------------------------------------------------------------
 #                      Contactenos
