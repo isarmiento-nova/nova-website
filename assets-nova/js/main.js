@@ -29,17 +29,21 @@ function reportWindowSize() {
 
 
   // mostrar el primer carousle elemento
-  var carousel01 = document.getElementById("carousel-1");
-  carousel01.classList.add("active");
-  var carousel02 = document.getElementById("carousel-2");
-  carousel02.classList.remove("active");
-
+  //porque deberia hacer esto!?
+  if (window.location.href.indexOf("projects.html") <= -1) {
+    var carousel01 = document.getElementById("carousel-1");
+    carousel01.classList.add("active");
+    var carousel02 = document.getElementById("carousel-2");
+    carousel02.classList.remove("active");
+  }
 
   // tomar la altura de la imagen de TRANSMEDIA
   var heightDiv = document.getElementById("img-transmedia").offsetWidth;
   // console.log(heightDiv/4);
   // reescalar las letras dependiendo de esa altura
-  resizeCharacters(heightDiv / 5);
+  if (window.location.href.indexOf("projects.html") <= -1) {
+    resizeCharacters(heightDiv / 5);
+  }
 
 
 
@@ -367,8 +371,14 @@ $('#carousel').on('slid.bs.carousel', function () {
     $('#carousel .carousel-control-prev').removeClass('d-none');
     console.log(currentIndex)
   } else {
-    $('#carousel .carousel-control-prev').addClass('d-none');
-    $('#carousel .carousel-control-next').removeClass('d-none');
+    console.log(currentIndex)
+    if (currentIndex == 1) {
+      $('#carousel .carousel-control-prev').addClass('d-none');
+      $('#carousel .carousel-control-next').removeClass('d-none');
+    } else {
+      $('#carousel .carousel-control-next').removeClass('d-none');
+      $('#carousel .carousel-control-prev').removeClass('d-none');
+    }
   }
 });
 
