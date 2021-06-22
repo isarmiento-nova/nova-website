@@ -1,7 +1,8 @@
 .retract{
     width: 0%;
     padding: 0px !important;
-    transition: all 1s;
+    opacity: 0;
+    transition: opacity .3s linear, width 1s linear, padding 1s linear;
     overflow-y: hidden !important; 
 }
 
