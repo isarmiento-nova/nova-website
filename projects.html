@@ -68,16 +68,16 @@
                 <div id="sidenav-links">
                     <ul class="normal-elements">
                         <li data-menuanchor="inicio"><a href=""
-                                onclick="transitionToPage('../#inicio', '#280250')">Inicio</a>
+                                onclick="transitionToPage('/#inicio', '#280250')">Inicio</a>
                         </li>
                         <li data-menuanchor="nosotros"><a href=""
-                                onclick="transitionToPage('../#nosotros', '#FF4E15')">Nosotros</a></li>
+                                onclick="transitionToPage('/#nosotros', '#FF4E15')">Nosotros</a></li>
                         <li data-menuanchor="portafolio"><a href="#portafolio"
-                                onclick="transitionToPage('../#portafolio', '#ffffff')">Portafolio</a></li>
+                                onclick="transitionToPage('/#portafolio', '#ffffff')">Portafolio</a></li>
                         <li data-menuanchor="experiencia"><a href="#"
-                                onclick="transitionToPage('../#experiencia', '#280250')">Experiencia</a></li>
+                                onclick="transitionToPage('/#experiencia', '#280250')">Experiencia</a></li>
                         <li data-menuanchor="contacto"><a href="#"
-                                onclick="transitionToPage('../#contacto', '#0d6efd')">Contacto</a></li>
+                                onclick="transitionToPage('/#contacto', '#0d6efd')">Contacto</a></li>
                     </ul>
                     <ul class="special-elements d-none">
                         <li><a href="#" onclick="showList()">Listado</a></li>
@@ -115,11 +115,11 @@
                 <a class="active" href="#"><span>ESP</span>
                     <a href="#"><span>ENG</span>
             </div>-->
-
+            <!--
             <div class="ver-reel" style="z-index: 11;">
                 <a href="#"><img src="assets-nova/img/icon-ver-reel.png" alt="icono linkedin" height="22px"
                         style="margin-left: 5px;"><span>Ver el reel</span></a>
-            </div>
+            </div>-->
             <div class="d-flex">
                 <div id="list" class="col-12 col-md-6 py-4 px-5 mt-5 mt-md-1">
                     <div class="header row decoration-bottom justify-content-center">
@@ -128,7 +128,7 @@
                         </div>
                         <div class="col-3 col-md-6 text-left">
                         </div>
-                        <div class="justify-content-center col-12 gray-panel mb-2 mx-3">
+                        <div class="justify-content-center col-12 gray-panel mb-2 mx-3 unal-text">
                             <p>En <b>Nova
                                     Transmedia</b> contamos con la
                                 experiencia de una década de
@@ -242,7 +242,9 @@
                                     height="30px"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
-
+                        <button class="close-project-view" onclick="showList()">
+                            X
+                        </button>
                     </div>
                 </div>
             </div>

@@ -84,20 +84,22 @@ function replaceImage(project, id) {
 
 function hideList() {
     $('#list').addClass('retract')
-    $('#list').removeClass('openList');
+    $('#list').removeClass('open-list');
     $('.normal-elements').addClass('d-none')
     $('.special-elements').removeClass('d-none')
+    $('.unal-text').addClass('d-none');
 }
 
 function showList() {
     $('#list').removeClass('retract');
-    $('#list').addClass('openList');
+    $('#list').addClass('open-list');
     $('.normal-elements').removeClass('d-none');
     $('.special-elements').addClass('d-none');
+    $('.unal-text').removeClass('d-none');
     var carousel01 = document.getElementById("carousel-1");
     carousel01.classList.add("active");
     var carousel02 = document.getElementById("carousel-2");
     carousel02.classList.remove("active");
-    var carousel01 = document.getElementById("carousel-3");
-    carousel03.classList.add("active");
+    var carousel03 = document.getElementById("carousel-3");
+    carousel03.classList.remove("active");
 }
