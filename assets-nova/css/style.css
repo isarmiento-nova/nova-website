@@ -1093,7 +1093,38 @@ canvas {
   filter: invert(67%) sepia(83%) saturate(427%) hue-rotate(139deg) brightness(150%) contrast(87%);
 }
 
+@media (min-width: 768px){
+.extra-text-exp{
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
 
+.exp-button{
+  padding: 1rem 3rem;
+  background-color: #ff4e15;
+  color: white !important;
+  border-radius: 2rem;
+}
+.exp-button:hover{
+  background-color: #34ccdf;
+}
+}
+@media (max-width: 768px){
+  .extra-text-exp{
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .exp-button{
+    padding: .5rem 1rem;
+    background-color: #ff4e15;
+    color: white !important;
+    border-radius: 2rem;
+  }
+  .exp-button:hover{
+    background-color: #34ccdf;
+  }
+}
 
 #section3 .ver-reel {
   

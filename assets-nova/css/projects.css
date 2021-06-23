@@ -41,7 +41,16 @@
 }
 
 .decoration-bottom{
-    border-bottom: 2px solid #FF4E15 !important;
+    border-bottom: 2px solid #eaeaee !important;
+}
+.gray-panel{
+    background-color: #eaeaee;
+    padding: 1rem;
+    color: #280250
+}
+
+.gray-panel p{
+    margin-bottom: 0px;
 }
 
 #visible-image{
@@ -76,17 +85,21 @@
     #visible-image{
         height: 100%;
     }
-    .openList{
+    .open-list{
         width: 50%;
         padding: 1.5rem !important;
         transition: all 1s;
+    }
+    .gray-panel p{
+        font-size: 1.1rem;
+        font-weight: 600;
     }
 }
 @media (max-width: 768px){
     #visible-image{
         height: 50%;
     }
-    .openList{
+    .open-list{
         width: 100%;
         padding: 1.5rem !important;
         transition: all 1s;

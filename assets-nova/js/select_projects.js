@@ -3,56 +3,56 @@ var data = {
     0: {
         "name": "Primera infancia",
         "entity": "Ministerio de Educación Nacional de Colombia",
-        "main_img_path": "./assets-nova/projects/proj1.jpg",
+        "main_img_path": "./assets-nova/img/projects/proj1.jpg",
         "challenge": "“Necesitamos recursos que sirvan como complemento para capacitar a los estudiantes del uso de los laboratorios”",
         "solution": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim mi nec tortor vehicula, ullamcorper semper elit congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur arcu nibh, vel <b>molestie urna ultricies et. Mauris magna</b> ipsum, faucibus et enim ut, tempor ornare magna. Mauris eu ante sit amet velit aliquam ultricies sit amet rutrum nulla.",
-        "img2_path": "./assets-nova/projects/proj1_2.png",
-        "more_img_slide": ["./assets-nova/projects/proj1_3.png", "./assets-nova/projects/proj1_4.png", "./assets-nova/projects/proj1_5.png"]
+        "img2_path": "./assets-nova/img/projects/proj1_2.PNG",
+        "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
     1: {
         "name": "Laboratorios de ciencias",
         "entity": "Universidad Nacional de Colombia",
-        "main_img_path": "./assets-nova/projects/proj1.jpg",
+        "main_img_path": "./assets-nova/img/projects/proj1.jpg",
         "challenge": "“Necesitamos recursos que sirvan como complemento para capacitar a los estudiantes del uso de los laboratorios”",
         "solution": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim mi nec tortor vehicula, ullamcorper semper elit congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur arcu nibh, vel <b>molestie urna ultricies et. Mauris magna</b> ipsum, faucibus et enim ut, tempor ornare magna. Mauris eu ante sit amet velit aliquam ultricies sit amet rutrum nulla.",
-        "img2_path": "./assets-nova/projects/proj1_2.png",
-        "more_img_slide": ["./assets-nova/projects/proj1_3.png", "./assets-nova/projects/proj1_4.png", "./assets-nova/projects/proj1_5.png"]
+        "img2_path": "./assets-nova/img/projects/proj1_2.PNG",
+        "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
     2: {
         "name": "Curso Seguridad vial",
         "entity": "ANSV",
-        "main_img_path": "./assets-nova/projects/proj1.jpg",
+        "main_img_path": "./assets-nova/img/projects/proj1.jpg",
         "challenge": "“Necesitamos recursos que sirvan como complemento para capacitar a los estudiantes del uso de los laboratorios”",
         "solution": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim mi nec tortor vehicula, ullamcorper semper elit congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur arcu nibh, vel <b>molestie urna ultricies et. Mauris magna</b> ipsum, faucibus et enim ut, tempor ornare magna. Mauris eu ante sit amet velit aliquam ultricies sit amet rutrum nulla.",
-        "img2_path": "./assets-nova/projects/proj1_2.png",
-        "more_img_slide": ["./assets-nova/projects/proj1_3.png", "./assets-nova/projects/proj1_4.png", "./assets-nova/projects/proj1_5.png"]
+        "img2_path": "./assets-nova/img/projects/proj1_2.PNG",
+        "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
     3: {
         "name": "Organizacional",
         "entity": "Colmena Seguros",
-        "main_img_path": "./assets-nova/projects/proj1.jpg",
+        "main_img_path": "./assets-nova/img/projects/proj1.jpg",
         "challenge": "“Necesitamos recursos que sirvan como complemento para capacitar a los estudiantes del uso de los laboratorios”",
         "solution": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim mi nec tortor vehicula, ullamcorper semper elit congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur arcu nibh, vel <b>molestie urna ultricies et. Mauris magna</b> ipsum, faucibus et enim ut, tempor ornare magna. Mauris eu ante sit amet velit aliquam ultricies sit amet rutrum nulla.",
-        "img2_path": "./assets-nova/projects/proj1_2.png",
-        "more_img_slide": ["./assets-nova/projects/proj1_3.png", "./assets-nova/projects/proj1_4.png", "./assets-nova/projects/proj1_5.png"]
+        "img2_path": "./assets-nova/img/projects/proj1_2.PNG",
+        "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
     4: {
         "name": "Diplomado para docentes",
         "entity": "Ruraltic",
-        "main_img_path": "./assets-nova/projects/proj1.jpg",
+        "main_img_path": "./assets-nova/img/projects/proj1.jpg",
         "challenge": "“Necesitamos recursos que sirvan como complemento para capacitar a los estudiantes del uso de los laboratorios”",
         "solution": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim mi nec tortor vehicula, ullamcorper semper elit congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur arcu nibh, vel <b>molestie urna ultricies et. Mauris magna</b> ipsum, faucibus et enim ut, tempor ornare magna. Mauris eu ante sit amet velit aliquam ultricies sit amet rutrum nulla.",
-        "img2_path": "./assets-nova/projects/proj1_2.png",
-        "more_img_slide": ["./assets-nova/projects/proj1_3.png", "./assets-nova/projects/proj1_4.png", "./assets-nova/projects/proj1_5.png"]
+        "img2_path": "./assets-nova/img/projects/proj1_2.PNG",
+        "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
     5: {
         "name": "Emisoras",
         "entity": "Gobernación de cundinamarca",
-        "main_img_path": "./assets-nova/projects/proj1.jpg",
+        "main_img_path": "./assets-nova/img/projects/proj1.jpg",
         "challenge": "“Necesitamos recursos que sirvan como complemento para capacitar a los estudiantes del uso de los laboratorios”",
         "solution": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim mi nec tortor vehicula, ullamcorper semper elit congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur arcu nibh, vel <b>molestie urna ultricies et. Mauris magna</b> ipsum, faucibus et enim ut, tempor ornare magna. Mauris eu ante sit amet velit aliquam ultricies sit amet rutrum nulla.",
-        "img2_path": "./assets-nova/projects/proj1_2.png",
-        "more_img_slide": ["./assets-nova/projects/proj1_3.png", "./assets-nova/projects/proj1_4.png", "./assets-nova/projects/proj1_5.png"]
+        "img2_path": "./assets-nova/img/projects/proj1_2.PNG",
+        "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
 }
 function setProjects() {
