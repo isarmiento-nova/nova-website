@@ -346,8 +346,10 @@ window.transitionToPage = function (href, colorNextPage) {
   document.querySelector('body').style.backgroundColor = colorNextPage;
   setTimeout(function () {
     window.location.href = href
-  }, 500)
+  }, 300)
+
 }
+
 
 document.addEventListener('DOMContentLoaded', function (event) {
   document.querySelector('body').style.opacity = 1
