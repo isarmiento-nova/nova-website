@@ -742,7 +742,7 @@ canvas {
   
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 100px;
+  font-size: 65px;
   color: #fff;
   text-align: left;
 
@@ -1164,13 +1164,18 @@ canvas {
 
 }
 
+.h-90{
+  height: 90% !important;
+}
 
-
+.h-95{
+  height: 95% !important;
+}
 
 #section3 .titulo-videos h1{
   font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 1.7rem;
   color: #fff;
   /* position: absolute;
   top: 50px;
