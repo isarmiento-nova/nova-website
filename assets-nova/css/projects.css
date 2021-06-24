@@ -109,6 +109,10 @@
     transform: all 1s;
 }
 
+.project-item:hover{
+    cursor: pointer;
+}
+
 #challenge-text b{
     color: #FF4E15;
 }
