@@ -58,14 +58,15 @@ var data = {
 function setProjects() {
     var html = "";
     for (let i = 0; i < Object.keys(data).length; i++) {
-        html += '<div class="my-3 project-item" href="#" onclick="hideList()" onmouseover="switchProjects(' + i + ')"><h1>' + data[i]["name"] + '</h1><h4>' + data[i]["entity"] + '</h4><p class="show-indicator">Ver Proyecto</p></div>';
+        //ver proyecto, just in case
+        //html += '<div class="my-3 project-item" href="#" onclick="hideList()" onmouseover="switchProjects(' + i + ')"><h1>' + data[i]["name"] + '</h1><h4>' + data[i]["entity"] + '</h4><p class="show-indicator">Ver Proyecto</p></div>';
+        html += '<div class="my-3 project-item" href="#" onclick="hideList()" onmouseover="switchProjects(' + i + ')"><h1>' + data[i]["name"] + '</h1><h4>' + data[i]["entity"] + '</h4></div>';
     }
     $("#project-container").html(html);
 }
 
 
 function switchProjects(num) {
-    console.log("si buenas")
     $("#visible-image").css("background-image", "url(" + data[num]["main_img_path"] + ")");
     $("#challenge-text").html("<h1 style=\"color: white;\">" + data[num]["challenge"] + "</h1><p class=\"mt-5\" style=\"color: white;\">" + data[num]["entity"] + "</p>");
     $("#how-text").html("<p style=\"color: white !important;\">" + data[num]["solution"] + "</p>");
@@ -84,11 +85,19 @@ function replaceImage(project, id) {
 
 
 function hideList() {
-    $('#list').addClass('retract')
-    $('#list').removeClass('open-list');
-    $('.normal-elements').addClass('d-none')
-    $('.special-elements').removeClass('d-none')
-    $('.unal-text').addClass('d-none');
+    $('.unal-text').removeClass('opacity-show');
+    $('.unal-text').addClass('opacity-hide');
+    setTimeout(function () {
+        $('#list').addClass('retract')
+        $('#list').removeClass('open-list');
+        $('.normal-elements').addClass('d-none')
+        $('.special-elements').removeClass('d-none')
+        setTimeout(function () {
+            $('.unal-text').addClass('d-none');
+        }, 200);
+
+    }, 700)
+
 }
 
 function showList() {
@@ -97,11 +106,18 @@ function showList() {
     $('.normal-elements').removeClass('d-none');
     $('.special-elements').addClass('d-none');
     $('.unal-text').removeClass('d-none');
+    setTimeout(function () {
+        $('.unal-text').addClass('opacity-hide');
+    }, 200)
+    $('#carousel-portafolio .carousel-control-prev').addClass('d-none');
     var carousel01 = document.getElementById("carousel-1");
     carousel01.classList.add("active");
     var carousel02 = document.getElementById("carousel-2");
     carousel02.classList.remove("active");
     var carousel03 = document.getElementById("carousel-3");
     carousel03.classList.remove("active");
-
+    setTimeout(function () {
+        $('.unal-text').addClass('opacity-show');
+        $('.unal-text').removeClass('opacity-hide');
+    }, 700);
 }
