@@ -94,6 +94,21 @@
     color: #FF4E15;
 }
 
+.project-item:hover h1{
+    color: #CFCFCF !important;
+}
+
+.project-item:hover h4{
+    color: #CFCFCF !important;
+}
+
+.project-item:hover .show-indicator{
+    padding-left: 10vh;
+    transform: scale(1.2);
+    font-weight: 600;
+    transform: all 1s;
+}
+
 #challenge-text b{
     color: #FF4E15;
 }
@@ -107,7 +122,7 @@
     }
     .open-list{
         width: 50%;
-        padding: 1.5rem !important;
+        padding: 3rem !important;
         transition: all 1s;
     }
     .gray-panel p{
