@@ -143,6 +143,7 @@
 #challenge-text b{
     color: #FF4E15;
 }
+
 @media (min-width: 768px){
     #how-text p{
         line-height: 2.3rem;
@@ -159,6 +160,17 @@
     .gray-panel p{
         font-size: 1.1rem;
         font-weight: 500;
+    }
+
+    #challenge-text h1{
+        font-size: 2rem;
+    }
+
+    .project-item h1{
+        font-size: 1.7rem;
+    }
+    .project-item h4{
+        font-size: 1.1rem;
     }
 }
 @media (max-width: 768px){
