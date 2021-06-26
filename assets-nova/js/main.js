@@ -87,6 +87,7 @@ function reportWindowSize() {
     restartLogoGifOut();
   }
 
+  document.getElementsByClassName('video-iframe')[0].setAttribute("height", document.getElementsByClassName("video-iframe")[0].offsetWidth * 0.5625)
 
   navOpenState = false;
 
@@ -371,15 +372,14 @@ $('#carousel').on('slid.bs.carousel', function () {
   if (currentIndex == totalItems) {
     $('#carousel .carousel-control-next').addClass('d-none');
     $('#carousel .carousel-control-prev').removeClass('d-none');
-    console.log(currentIndex)
   } else {
-    console.log(currentIndex)
     if (currentIndex == 1) {
       $('#carousel .carousel-control-prev').addClass('d-none');
       $('#carousel .carousel-control-next').removeClass('d-none');
     } else {
       $('#carousel .carousel-control-next').removeClass('d-none');
       $('#carousel .carousel-control-prev').removeClass('d-none');
+      document.getElementsByClassName('video-iframe')[0].setAttribute("height", document.getElementsByClassName("video-iframe")[0].offsetWidth * 0.5625);
     }
   }
 });
@@ -406,6 +406,91 @@ $('#carousel-portafolio').on('slid.bs.carousel', function () {
 
   }
 });
+
+/*--------------------------------------------------------------
+#                      Experiencia
+--------------------------------------------------------------*/
+
+// animations experiencia, change video
+
+var videos = ['https://www.youtube.com/embed/C7Kmx17tpJM', 'https://www.youtube.com/embed/ZLbkuZDxk1o', 'https://www.youtube.com/embed/c4tH__VqAuE', 'https://www.youtube.com/embed/EYX2CleOGAQ']
+function desapearNormalList(id) {
+  var cards = $('.normal-list .video-base');
+  for (let i = 0; i < cards.length; i++) {
+    if (i % 2 == 0) {
+      cards[i].className += " exp-normal-disapear-bottom";
+    }
+    else {
+      cards[i].className += " exp-normal-disapear-top";
+    }
+  }
+
+  setTimeout(function () {
+    $('.normal-list').addClass("d-none");
+    $('.vertical-list').removeClass("d-none");
+    $('.video-holder').removeClass("d-none");
+    $('.video-holder').removeClass("hide-vertical-list-element");
+    $('.video-holder').addClass("show-vertical-list-element");
+    document.getElementsByClassName('video-iframe')[0].setAttribute("height", document.getElementsByClassName("video-iframe")[0].offsetWidth * 0.5625)
+  }, 750);
+  document.getElementsByClassName('video-iframe')[0].src = videos[id];
+  cards = $('.video-base-small');
+  let arrayTimes = [1000, 1300, 1500, 1800];
+  for (let i = 0; i < cards.length; i++) {
+    setTimeout(function () {
+      cards[i].className = (cards[i].className + "").replace("hidden-vertical-list-element", "");
+      cards[i].className = (cards[i].className + "").replace("hide-vertical-list-element", "");
+      cards[i].className += ('show-vertical-list-element');
+    }, arrayTimes[i]);
+  };
+}
+
+function changeVideo(id) {
+  document.getElementsByClassName('video-iframe')[0].src = videos[id];
+}
+
+function appearNormalList() {
+  let arrayTimes = [10, 800, 1100, 1300, 1600];
+  cards = $('.video-base-small');
+  for (let i = 0; i < cards.length; i++) {
+    setTimeout(function () {
+      cards[i].className = (cards[i].className + "").replace("show-vertical-list-element", "");
+      cards[i].className += 'hide-vertical-list-element';
+    }, arrayTimes[i]);
+  };
+  setTimeout(function () {
+    var videoIframe = document.getElementsByClassName('video-holder')[0];
+    videoIframe.className = (videoIframe.className + "").replace("show-vertical-list-element", "");
+    videoIframe.className += 'hide-vertical-list-element';
+  }, arrayTimes[4]);
+
+  setTimeout(function () {
+    $('.normal-list').removeClass("d-none");
+    $('.vertical-list').addClass("d-none");
+    $('.video-holder').addClass("d-none");
+    var cards = $('.normal-list .video-base');
+
+    for (let i = 0; i < cards.length; i++) {
+      if (i % 2 == 0) {
+        cards[i].className = (cards[i].className + "").replace("exp-normal-disapear-bottom", "");
+      }
+      else {
+        cards[i].className = (cards[i].className + "").replace("exp-normal-disapear-top", "");
+      }
+      cards[i].className += " exp-normal-appear";
+    }
+
+    cards = $('.video-base-small');
+    for (let i = 0; i < cards.length; i++) {
+      setTimeout(function () {
+        cards[i].className = (cards[i].className + "").replace("hide-vertical-list-element", "");
+        cards[i].className += 'hidden-vertical-list-element';
+      }, arrayTimes[i]);
+    };
+
+  }, 2500);
+}
+
 /*--------------------------------------------------------------
 #                      Contactenos
 --------------------------------------------------------------*/

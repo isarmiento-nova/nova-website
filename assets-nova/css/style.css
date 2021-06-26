@@ -1087,18 +1087,108 @@ canvas {
   /* justify-content: center; */
 }
 
+.vh-10{
+  height: 10vh;
+}
 
 
 .color-logo-azul{
   filter: invert(67%) sepia(83%) saturate(427%) hue-rotate(139deg) brightness(150%) contrast(87%);
 }
 
+
+.normal-list{
+  overflow: hidden;
+}
+
+.show-vertical-list-element{
+  animation: showVerticalItems 1s forwards;
+}
+
+.hide-vertical-list-element{
+  animation: hideVerticalItems 1s forwards;
+}
+
+@keyframes hideVerticalItems {
+  0%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  25%{
+    opacity: .7;
+    transform: scale(1.1);
+  }
+  50%{
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes showVerticalItems {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  50%{
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  75%{
+    opacity: .7;
+    transform: scale(1.1);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+}
+
+.hidden-vertical-list-element{
+  transform: scale(0);
+}
+
 @media (min-width: 768px){
+  /* Animation */
+.exp-normal-disapear-bottom{
+  transform: translateY(50vh);
+  opacity: 0;
+  transition: transform .7s linear, opacity 0.4s;
+}
+
+.exp-normal-disapear-top{
+  transform: translateY(-50vh);
+  opacity: 0;
+  transition: transform .7s linear, opacity 0.4s;
+}
+
+.exp-normal-hidden-top{
+
+}
+
+.exp-normal-appear{
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 1s linear, opacity 0.6s linear;
+}
+
+/*---------------------*/
+
 .extra-text-exp{
   line-height: 2rem;
   font-size: 1.2rem;
 }
 
+.video-base-small{
+  height: 15vh;
+}
+.video-base-small:hover{
+  height: 17vh;
+}
 .exp-button{
   padding: 0.45rem 2rem;
   background-color: #ff4e15;
@@ -1110,9 +1200,34 @@ canvas {
 }
 }
 @media (max-width: 768px){
+  .exp-normal-disapear-bottom{
+    transform: translateX(50vh);
+    opacity: 0;
+    transition: transform .7s linear, opacity 0.4s;
+  }
+  
+  .exp-normal-disapear-top{
+    transform: translateX(-50vh);
+    opacity: 0;
+    transition: transform .7s linear, opacity 0.4s;
+  }
+  .exp-normal-appear{
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform .6s linear, opacity 0.7s;
+  }
+
   .extra-text-exp{
     line-height: 1.5rem;
     font-size: 0.8rem;
+  }
+
+  .video-base-small{
+    height: 10vh;
+  }
+  
+  .video-base-small:hover{
+    height: 10vh;
   }
   
   .exp-button{

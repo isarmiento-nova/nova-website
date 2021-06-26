@@ -464,7 +464,7 @@
         </div>
 
         <!-- Experiencias -->
-        <div class="section" id="section3">
+        <div class="section" id="section3" style="height: 100%;">
             <div class="ver-reel" style="z-index: 11;">
                 <a href="#"><img src="assets-nova/img/icon-ver-reel.png" alt="icono linkedin" height="22px"
                         style="margin-left: 5px;" class="color-logo-azul"><span>Ver el reel</span></a>
@@ -473,22 +473,80 @@
                 <div class="row d-flex justify-content-center align-items-center align-content-center"
                     style="height: 100%;">
                     <div
-                        class="col-10 text-start mt-5 pt-5 mb-3  d-flex flex-wrap justify-content-center justify-content-md-between align-items-end titulo-videos">
+                        class="col-10 text-start pt-2 mb-3  d-flex flex-wrap justify-content-center justify-content-md-between align-items-end titulo-videos">
                         <h1>Trabajo seleccionado&nbsp;</h1>
                         <a class="mt-2 exp-button" onclick="transitionToPage('./projects.html', '#ffffff')">
                             Ver todo</a>
-                        <p class="col-12 col-md-8 mt-3 extra-text-exp">Contamos con la experiencia de una <b>década</b>
+                        <p class="col-12 col-md-9 mt-3 extra-text-exp">Contamos con la experiencia de una <b>década</b>
                             de
                             investigación
                             y más de <b>80 proyectos</b> de innovación realizados desde la <b>UNAL</b>
                         </p>
                     </div>
-                    <div class="col-10" style=" height: 75%;">
+                    <div class="col-11 col-md-7 video-holder d-none">
+                        <iframe width="100%" height="" class="video-iframe"
+                            src="https://www.youtube.com/embed/C7Kmx17tpJM" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-12 col-md-3 vertical-list d-none">
+                        <div class="row d-flex justify-content-center h-100">
+                            <div class="col-12 py-1 video-base-small hidden-vertical-list-element">
+                                <span class=" h-90 d-flex align-items-center justify-content-center icon-box"
+                                    style=" background: url('assets-nova/img/experiencia/img-video-1.jpg'); background-size: cover; background-position: center;"
+                                    onclick="changeVideo(0)">
+                                    <div class=" video-individual  w-100 h-100 d-flex align-items-center justify-content-center "
+                                        style="background-color: #280250;">
+                                        <!-- <img src="assets-nova/img/experiencia/img-video-3.jpg"> -->
+                                        <video src="assets-nova/video/video-bg-1.mp4" loop muted autoplay></video>
+                                    </div>
+                                    <h1>VER MÁS</h1>
+                                </span>
+                            </div>
+                            <div class="col-12 py-1 video-base-small hidden-vertical-list-element">
+                                <span class=" h-90 d-flex align-items-center justify-content-center icon-box"
+                                    style=" background: url('assets-nova/img/experiencia/img-video-2.jpg'); background-size: cover; background-position: center;"
+                                    onclick="changeVideo(1)">
+                                    <div class=" video-individual  w-100 h-100 d-flex align-items-center justify-content-center "
+                                        style="background-color: #280250;">
+                                        <!-- <img src="assets-nova/img/experiencia/img-video-3.jpg"> -->
+                                        <video src="assets-nova/video/video-bg-2.mp4" loop muted autoplay></video>
+                                    </div>
+                                    <h1>VER MÁS</h1>
+                                </span>
+                            </div>
+                            <div class="col-12 py-1 video-base-small hidden-vertical-list-element">
+                                <span class=" h-90 d-flex align-items-center justify-content-center icon-box"
+                                    style=" background: url('assets-nova/img/experiencia/img-video-3.jpg'); background-size: cover; background-position: center;"
+                                    onclick="changeVideo(2)">
+                                    <div class=" video-individual  w-100 h-100 d-flex align-items-center justify-content-center "
+                                        style="background-color: #280250;">
+                                        <!-- <img src="assets-nova/img/experiencia/img-video-3.jpg"> -->
+                                        <video src="assets-nova/video/video-bg-3.mp4" loop muted autoplay></video>
+                                    </div>
+                                    <h1>VER MÁS</h1>
+                                </span>
+                            </div>
+                            <div class="col-12 py-1 video-base-small hidden-vertical-list-element">
+                                <span class=" h-90 d-flex align-items-center justify-content-center icon-box"
+                                    style=" background: url('assets-nova/img/experiencia/img-video-4.jpg'); background-size: cover; background-position: center;"
+                                    onclick="changeVideo(3)">
+                                    <div class=" video-individual  w-100 h-100 d-flex align-items-center justify-content-center "
+                                        style="background-color: #280250;">
+                                        <!-- <img src="assets-nova/img/experiencia/img-video-3.jpg"> -->
+                                        <video src="assets-nova/video/video-bg-4.mp4" loop muted autoplay></video>
+                                    </div>
+                                    <h1>VER MÁS</h1>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 normal-list" style=" height: 75%;">
                         <div class="row d-flex justify-content-center " style=" height: 100%; ">
                             <div class="col-12 col-xl-3 py-1 video-base">
                                 <span class=" h-90 d-flex align-items-center justify-content-center icon-box"
                                     style=" background: url('assets-nova/img/experiencia/img-video-1.jpg'); background-size: cover; background-position: center;"
-                                    onclick="transitionToPage('https://www.google.com', '#ffffff')">
+                                    onclick="desapearNormalList(0)">
                                     <div class=" video-individual  w-100 h-100 d-flex align-items-center justify-content-center "
                                         style="background-color: #280250;">
                                         <!-- <img src="assets-nova/img/experiencia/img-video-3.jpg"> -->
@@ -500,7 +558,7 @@
                             <div class="col-12 col-xl-3 py-1 video-base">
                                 <span class=" h-90 d-flex align-items-center justify-content-center icon-box"
                                     style=" background: url('assets-nova/img/experiencia/img-video-2.jpg'); background-size: cover; background-position: center;"
-                                    onclick="transitionToPage('https://www.google.com', '#5100e7')">
+                                    onclick="desapearNormalList(1)">
                                     <div class=" video-individual  w-100 h-100 d-flex align-items-center justify-content-center "
                                         style="background-color: #280250;">
                                         <!-- <img src="assets-nova/img/experiencia/img-video-3.jpg"> -->
@@ -512,7 +570,7 @@
                             <div class="col-12 col-xl-3 py-1 video-base">
                                 <span class=" h-90 d-flex align-items-center justify-content-center icon-box"
                                     style=" background: url('assets-nova/img/experiencia/img-video-3.jpg'); background-size: cover; background-position: center;"
-                                    onclick="transitionToPage('https://www.google.com', '#ff4e15')">
+                                    onclick="desapearNormalList(2)">
                                     <div class=" video-individual  w-100 h-100 d-flex align-items-center justify-content-center "
                                         style="background-color: #280250;">
                                         <!-- <img src="assets-nova/img/experiencia/img-video-3.jpg"> -->
@@ -524,7 +582,7 @@
                             <div class="col-12 col-xl-3 py-1 video-base">
                                 <span class=" h-90 d-flex align-items-center justify-content-center icon-box"
                                     style=" background: url('assets-nova/img/experiencia/img-video-4.jpg'); background-size: cover; background-position: center;"
-                                    onclick="transitionToPage('https://www.google.com', '#280250')">
+                                    onclick="desapearNormalList(3)">
                                     <div class=" video-individual  w-100 h-100 d-flex align-items-center justify-content-center "
                                         style="background-color: #280250;">
                                         <!-- <img src="assets-nova/img/experiencia/img-video-3.jpg"> -->
@@ -534,8 +592,6 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
-                    <div class="mb-5 pb-5">
                     </div>
                 </div>
             </div>

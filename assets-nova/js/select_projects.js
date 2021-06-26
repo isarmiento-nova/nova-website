@@ -6,7 +6,7 @@ var data = {
         "main_img_path": "./assets-nova/img/projects/proj1.jpg",
         "challenge": "“Brindar herramientas a los colaboradores de la Fundación Grupo Social para comprender, asumir y realizar el trabajo desde casa, como respuesta a las nuevas realidades tanto laborales como personales que trajo la pandemia por la covid-19.”",
         "solution": "Elaboramos una serie de recursos digitales que actualmente facilitan el trabajo remoto, propician el bienestar, contribuyen a la comunicación, mejoran el uso de herramientas tecnológicas y enseñan a tratar la información con seguridad y confidencialidad.",
-        "img2_path": "./assets-nova/img/projects/proj1_2.PNG",
+        "video": "https://www.youtube.com/embed/C7Kmx17tpJM",
         "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
     1: {
@@ -15,7 +15,7 @@ var data = {
         "main_img_path": "./assets-nova/img/projects/proj2.jpg",
         "challenge": "“Necesitamos recursos que sirvan como complemento para capacitar a los estudiantes del uso de los laboratorios”",
         "solution": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim mi nec tortor vehicula, ullamcorper semper elit congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur arcu nibh, vel <b>molestie urna ultricies et. Mauris magna</b> ipsum, faucibus et enim ut, tempor ornare magna. Mauris eu ante sit amet velit aliquam ultricies sit amet rutrum nulla.",
-        "img2_path": "./assets-nova/img/projects/proj1_2.PNG",
+        "video": "https://www.youtube.com/embed/ZLbkuZDxk1o",
         "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
     2: {
@@ -24,7 +24,7 @@ var data = {
         "main_img_path": "./assets-nova/img/projects/proj3.jpg",
         "challenge": "“Difundir contenidos sobre temas del ambiente familiar y su relación con los aprendizajes de niños, jóvenes y adolescentes del país, que permitan conectar a estudiantes, familias y cuidadores.”",
         "solution": "Desarrollamos el sitio web para nuestro aliado, en el que compilamos sus materiales y brindamos la posibilidad de acceder rápida y efectivamente a la información utilizando flitros que la hacen más interactiva y precisa.",
-        "img2_path": "./assets-nova/img/projects/proj1_2.PNG",
+        "video": "https://www.youtube.com/embed/c4tH__VqAuE",
         "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
     3: {
@@ -33,7 +33,7 @@ var data = {
         "main_img_path": "./assets-nova/img/projects/proj4.jpg",
         "challenge": "“Organizar y visibilizar los recursos que Salud UNAL Contigo ha diseñado para informar e influir positivamente a la sociedad en la toma de decisiones y comportamientos sobre temas de salud.”",
         "solution": "Desarrollamos el sitio web para nuestro aliado, en el que compilamos sus materiales y brindamos la posibilidad de acceder rápida y efectivamente a la información utilizando flitros que la hacen más interactiva y precisa.",
-        "img2_path": "./assets-nova/img/projects/proj1_2.PNG",
+        "video": "https://www.youtube.com/embed/EYX2CleOGAQ",
         "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
     4: {
@@ -42,7 +42,7 @@ var data = {
         "main_img_path": "./assets-nova/img/projects/proj1.jpg",
         "challenge": "“Necesitamos recursos que sirvan como complemento para capacitar a los estudiantes del uso de los laboratorios”",
         "solution": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim mi nec tortor vehicula, ullamcorper semper elit congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur arcu nibh, vel <b>molestie urna ultricies et. Mauris magna</b> ipsum, faucibus et enim ut, tempor ornare magna. Mauris eu ante sit amet velit aliquam ultricies sit amet rutrum nulla.",
-        "img2_path": "./assets-nova/img/projects/proj1_2.PNG",
+        "video": "https://www.youtube.com/embed/EYX2CleOGAQ",
         "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
     5: {
@@ -51,7 +51,7 @@ var data = {
         "main_img_path": "./assets-nova/img/projects/proj1.jpg",
         "challenge": "“Necesitamos recursos que sirvan como complemento para capacitar a los estudiantes del uso de los laboratorios”",
         "solution": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim mi nec tortor vehicula, ullamcorper semper elit congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur arcu nibh, vel <b>molestie urna ultricies et. Mauris magna</b> ipsum, faucibus et enim ut, tempor ornare magna. Mauris eu ante sit amet velit aliquam ultricies sit amet rutrum nulla.",
-        "img2_path": "./assets-nova/img/projects/proj1_2.PNG",
+        "video": "https://www.youtube.com/embed/EYX2CleOGAQ",
         "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
 }
@@ -70,8 +70,12 @@ function switchProjects(num) {
     $("#visible-image").css("background-image", "url(" + data[num]["main_img_path"] + ")");
     $("#challenge-text").html("<h1 style=\"color: white;\">" + data[num]["challenge"] + "</h1><p class=\"mt-5\" style=\"color: white;\">" + data[num]["entity"] + "</p>");
     $("#how-text").html("<p style=\"color: white !important;\">" + data[num]["solution"] + "</p>");
-    $("#second-image").html("<img class='width-100' src='" + data[num]["img2_path"] + "'>");
-    $("#img-main-galery").html("<img class=\"width-100\" src='" + data[num]["more_img_slide"][0] + "'>");;
+    var height = document.getElementById("second-image").offsetWidth * 0.5625;
+    //$("#second-image").html("<img class='width-100' src='" + data[num]["img2_path"] + "'>");
+    document.getElementsByClassName("video-iframe")[0].src = data[num]["video"];
+
+
+
     var galery = "";
     for (let i = 0; i < data[num]["more_img_slide"].length; i++) {
         galery += "<div class=\"px-3 py-3 col-5 col-md-12\" onclick=\"replaceImage(" + num + "," + i + ")\"> <img class=\"width-100\"src=" + data[num]["more_img_slide"][i] + "></div>"
@@ -95,7 +99,6 @@ function hideList() {
         setTimeout(function () {
             $('.unal-text').addClass('d-none');
         }, 200);
-
     }, 700)
 
 }
@@ -121,3 +124,5 @@ function showList() {
         $('.unal-text').removeClass('opacity-hide');
     }, 700);
 }
+
+
