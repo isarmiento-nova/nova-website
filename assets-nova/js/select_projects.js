@@ -74,9 +74,8 @@ function switchProjects(num) {
     //$("#second-image").html("<img class='width-100' src='" + data[num]["img2_path"] + "'>");
     document.getElementsByClassName("video-iframe")[0].src = data[num]["video"];
 
-
-
     var galery = "";
+    replaceImage(num, 0);
     for (let i = 0; i < data[num]["more_img_slide"].length; i++) {
         galery += "<div class=\"px-3 py-3 col-5 col-md-12\" onclick=\"replaceImage(" + num + "," + i + ")\"> <img class=\"width-100\"src=" + data[num]["more_img_slide"][i] + "></div>"
     }
@@ -119,6 +118,8 @@ function showList() {
     carousel02.classList.remove("active");
     var carousel03 = document.getElementById("carousel-3");
     carousel03.classList.remove("active");
+    $('#carousel .carousel-control-prev').addClass('d-none');
+    $('#carousel .carousel-control-next').removeClass('d-none');
     setTimeout(function () {
         $('.unal-text').addClass('opacity-show');
         $('.unal-text').removeClass('opacity-hide');
