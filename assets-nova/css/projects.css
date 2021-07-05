@@ -15,15 +15,10 @@
 
 .close-project-view{
     position: absolute;
-    top: 5vh;
-    right: 5vh;
     background-color: transparent;
     color: white;
     border: 2px solid #FF4E15;
     border-radius: 5rem;
-    font-size: 2rem;
-    height: 60px;
-    width: 60px;
     z-index: 100;
 }
 
@@ -145,6 +140,13 @@
 }
 
 @media (min-width: 768px){
+    .close-project-view{
+        top: 5vh;
+        right: 5vw;
+        height: 60px;
+        width: 60px;
+        font-size: 2rem;
+    }
     #how-text p{
         line-height: 2.3rem;
         font-size: 1.2rem;
@@ -174,12 +176,20 @@
     }
 }
 @media (max-width: 768px){
+    .close-project-view{
+        position: absolute;
+        top: 7vh;
+        right: 1vw;
+        height: 35px;
+        width: 35px;
+        font-size: 1rem;
+    }
     #visible-image{
         height: 50%;
     }
     .open-list{
         width: 100%;
-        padding: 1.5rem !important;
+        padding: 3rem !important;
         transition: all 1s;
     }
 }

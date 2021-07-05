@@ -30,11 +30,16 @@ function reportWindowSize() {
 
   // mostrar el primer carousle elemento
   //porque deberia hacer esto!?
+  //yeiii lo puedo comentar!
+  /*
   if (window.location.href.indexOf("projects.html") <= -1) {
     var carousel01 = document.getElementById("carousel-1");
     carousel01.classList.add("active");
     var carousel02 = document.getElementById("carousel-2");
     carousel02.classList.remove("active");
+  }*/
+  if (window.location.href.indexOf("projects.html") > -1){
+    document.getElementById('project-container').style.height=($(window).height()-document.getElementById('project-container').getBoundingClientRect().top)+"px"
   }
 
   // tomar la altura de la imagen de TRANSMEDIA
