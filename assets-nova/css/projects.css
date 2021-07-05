@@ -47,7 +47,7 @@
 #project-container{
     overflow: hidden;
     overflow-y: scroll;  
-    max-height: 75vh;
+    max-height: 70vh;
 }
 
 .title-projects{
