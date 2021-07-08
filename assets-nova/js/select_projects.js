@@ -15,7 +15,7 @@ var data = {
     1: {
         "name": "Piezas de difusión",
         "entity": "Cultura Saber ICFES",
-        "main_img_path": "./assets-nova/img/projects/cultura_ICFES.PNG",
+        "main_img_path": "./assets-nova/img/projects/cultura_ICFES.png",
         "challenge": "“Difundir contenidos sobre temas del ambiente familiar y su relación con los aprendizajes de niños, jóvenes y adolescentes del país, que permitan conectar a estudiantes, familias y cuidadores.”",
         "solution": "Diseñamos videos animados y piezas de difusión con situaciones del contexto escolar en las que se descubre la conexión entre aprendizajes, habilidades personales y competencias ciudadanas, enriquecidos con subtítulos y lengua de señas para impactar y llegar a un público diverso.",
         "img2_path": "",
@@ -45,7 +45,7 @@ var data = {
     4: {
         "name": "Reglamentos de los laboratorios de Ciencias",
         "entity": "Universidad Nacional de Colombia",
-        "main_img_path": "./assets-nova/img/projects/laboratorios.PNG",
+        "main_img_path": "./assets-nova/img/projects/laboratorios.png",
         "challenge": "“Comunicar de manera clara, concisa y dinámica los reglamentos que deben atender quienes frecuentan los laboratorios de docencia de la Facultad de Ciencias en la UNAL.”",
         "solution": "Creamos recursos audiovisuales e interactivos que generan identidad y cuidado por medio de demostraciones reales, animaciones, efectos y actividades de valoración, en los que, además, se logra centrar el interés en el objetivo de las normas.",
         "img2_path": "",
@@ -55,7 +55,7 @@ var data = {
     5: {
         "name": "Escuela Virtual de Seguridad Vial",
         "entity": "Agencia Nacional de Seguridad Vial",
-        "main_img_path": "./assets-nova/img/projects/ANSV.jpg",
+        "main_img_path": "./assets-nova/img/projects/ANSV.png",
         "challenge": "“Enriquecer el programa de educación vial institucional a través de recursos educativos para los distintos actores viales y contextualizados a la diversidad geográfica, cultural y social del país.”",
         "solution": "Diseñamos y desarrollamos la plataforma web institucional y la Escuela Virtual de Seguridad Vial, integrada por recursos digitales de alta calidad y complejidad didáctica, dirigidos a los diversos actores viales del país: usuarios, autoridades y entidades territoriales.",
         "img2_path": "",
@@ -75,17 +75,17 @@ var data = {
     7: {
         "name": "Escuela Corporativa",
         "entity": "Ministerio de Educación Nacional",
-        "main_img_path": "./assets-nova/img/projects/escuela_corp.jpg",
+        "main_img_path": "./assets-nova/img/projects/escuela_corp.png",
         "challenge": "“Diseñar un programa de formación organizacional apoyado en tecnologías digitales e innovación pedagógica, con el que el MEN pueda contribuir a la consolidación de su cultura institucional.”",
         "solution": "Estructuramos la Escuela Corporativa del MEN, para lo cual diseñamos rutas de formación, recursos educativos digitales y objetos virtuales de aprendizaje que permiten al MEN orientar sobre temas como políticas, gestiones y estructuras del sistema educativo.",
-        "img2_path": "escuela_solucion.jpg",
+        "img2_path": "./assets-nova/img/projects/escuela_solucion.jpg",
         "video": "",
         "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
     8: {
         "name": "Curso virtual de gestión de activos",
         "entity": "SGA Enel Codensa",
-        "main_img_path": "./assets-nova/img/projects/activos.jpg",
+        "main_img_path": "./assets-nova/img/projects/activos.png",
         "challenge": "“Generar los recursos para capacitar al personal de Enel Codensa en la implementación de su sistema de gestión de bienes, infraestructura, derechos y talento humano.”",
         "solution": "Desarrollamos el Curso Virtual de Gestión de Activos Enel Codensa, en colaboración con el Grupo de Investigación en el Sector Energético Colombiano de la UNAL, que ha facilitado el aprendizaje de su personal técnico y profesional en un tema favorable para la prestación del servicio de energía en el país.",
         "img2_path": "./assets-nova/img/projects/enel_solucion.jpg",
@@ -121,12 +121,13 @@ function switchProjects(num) {
         document.getElementsByClassName("video-iframe")[0].src = data[num]["video"];
     }
     //third slide elements
+    /*
     var galery = "";
     replaceImage(num, 0);
     for (let i = 0; i < data[num]["more_img_slide"].length; i++) {
         galery += "<div class=\"px-3 py-3 col-5 col-md-12\" onclick=\"replaceImage(" + num + "," + i + ")\"> <img class=\"width-100\"src=" + data[num]["more_img_slide"][i] + "></div>"
     }
-    $("#list-of-images").html(galery);
+    $("#list-of-images").html(galery);*/
 }
 
 function replaceImage(project, id) {
