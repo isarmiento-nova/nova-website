@@ -15,7 +15,7 @@ var data = {
     1: {
         "name": "Piezas de difusión",
         "entity": "Cultura Saber ICFES",
-        "main_img_path": "./assets-nova/img/projects/cultura_ICFES.jpg",
+        "main_img_path": "./assets-nova/img/projects/cultura_ICFES.PNG",
         "challenge": "“Difundir contenidos sobre temas del ambiente familiar y su relación con los aprendizajes de niños, jóvenes y adolescentes del país, que permitan conectar a estudiantes, familias y cuidadores.”",
         "solution": "Diseñamos videos animados y piezas de difusión con situaciones del contexto escolar en las que se descubre la conexión entre aprendizajes, habilidades personales y competencias ciudadanas, enriquecidos con subtítulos y lengua de señas para impactar y llegar a un público diverso.",
         "img2_path": "",
