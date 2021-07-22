@@ -93,7 +93,6 @@ function reportWindowSize() {
   }
 
   document.getElementsByClassName('video-iframe')[0].setAttribute("height", document.getElementsByClassName("video-iframe")[0].offsetWidth * 0.5625)
-
   navOpenState = false;
 
 
@@ -377,15 +376,12 @@ $('#carousel').on('slid.bs.carousel', function () {
   if (currentIndex == totalItems) {
     $('#carousel .carousel-control-next').addClass('d-none');
     $('#carousel .carousel-control-prev').removeClass('d-none');
-  } else {
-    if (currentIndex == 1) {
-      $('#carousel .carousel-control-prev').addClass('d-none');
-      $('#carousel .carousel-control-next').removeClass('d-none');
-    } else {
-      $('#carousel .carousel-control-next').removeClass('d-none');
-      $('#carousel .carousel-control-prev').removeClass('d-none');
+    if (window.location.href.indexOf("projects.html") > -1){
       document.getElementsByClassName('video-iframe')[0].setAttribute("height", document.getElementsByClassName("video-iframe")[0].offsetWidth * 0.5625);
     }
+  } else {
+    $('#carousel .carousel-control-prev').addClass('d-none');
+    $('#carousel .carousel-control-next').removeClass('d-none');
   }
 });
 
@@ -509,7 +505,31 @@ $(".container-mail a").hover(function () {
 });
 
 
+//modal
+var player;
+function showModalReel(){/*
+  player = new YT.Player('player', {
+    height: '360',
+    width: '100%',
+    videoId: 'M7lc1UVf-VE',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });*/
 
+  $("#modal-reel-container").removeClass('hide-modal');
+  $("#modal-reel-container").addClass('show-modal');
+  $("#reel-video-holder").html(`<iframe width="100%" height="315" src="https://www.youtube.com/embed/shxiv4wS-_w" class="video-reel" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`)
+  document.getElementsByClassName('video-reel')[0].setAttribute("height", document.getElementsByClassName("video-reel")[0].offsetWidth * 0.5625)
+}
+
+function hideModalReel(){
+  
+  $("#modal-reel-container").removeClass('show-modal');
+  $("#modal-reel-container").addClass('hide-modal');
+  $("#reel-video-holder").html('');
+}
 
 
 

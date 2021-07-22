@@ -94,6 +94,12 @@
         <a href="#"><img src="assets-nova/img/icon-whatsapp.png" alt="Flecha top" height="40px"></a>
     </div>
 
+    <!-- Nice, I have to make my own modal to make it works in this page... really nice... -->
+    <div id="modal-reel-container" class="modal-reel frame-modal row justify-content-center align-content-center" onclick="hideModalReel()">
+        <div id="reel-video-holder" class="col-11 col-md-9">
+            
+        </div>
+    </div>
 
     <div id="fullpage">
         <!-- Home -->
@@ -107,8 +113,8 @@
             </div>-->
 
             <div class="ver-reel" style="z-index: 11;">
-                <a href="#"><img src="assets-nova/img/icon-ver-reel.png" alt="icono linkedin" height="22px"
-                        style="margin-left: 5px;"><span>Ver el reel</span></a>
+                <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><img src="assets-nova/img/icon-ver-reel.png" alt="icono linkedin" height="22px"
+                        style="margin-left: 5px;" data-toggle="modal" data-target="#exampleModalCenter"><span>Ver el reel</span></a>
             </div>
 
             <!-- Carousel -->
@@ -233,8 +239,8 @@
         <!-- Nosotros -->
         <div class="section" id="section1">
             <div class="ver-reel" style="z-index: 11;">
-                <a href="#"><img src="assets-nova/img/icon-ver-reel.png" alt="icono linkedin" height="22px"
-                        style="margin-left: 5px;"><span>Ver el reel</span></a>
+                <a href="#" onclick="showModalReel()"><img src="assets-nova/img/icon-ver-reel.png" alt="icono linkedin" height="22px"
+                        style="margin-left: 5px;" ><span>Ver el reel</span></a>
             </div>
             <div class="container">
                 <div class="row d-flex  align-items-center justify-content-center palabras">

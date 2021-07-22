@@ -174,8 +174,6 @@ function showList() {
     carousel01.classList.add("active");
     var carousel02 = document.getElementById("carousel-2");
     carousel02.classList.remove("active");
-    var carousel03 = document.getElementById("carousel-3");
-    carousel03.classList.remove("active");
     $('#carousel .carousel-control-prev').addClass('d-none');
     $('#carousel .carousel-control-next').removeClass('d-none');
     setTimeout(function () {
