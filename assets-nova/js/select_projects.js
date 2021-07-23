@@ -9,7 +9,7 @@ var data = {
         "challenge": "“Brindar herramientas a los colaboradores de la Fundación Grupo Social para comprender, asumir y realizar el trabajo desde casa, como respuesta a las nuevas realidades tanto laborales como personales que trajo la pandemia por la covid-19.”",
         "solution": "Elaboramos una serie de recursos digitales que actualmente facilitan el trabajo remoto, propician el bienestar, contribuyen a la comunicación, mejoran el uso de herramientas tecnológicas y enseñan a tratar la información con seguridad y confidencialidad.",
         "img2_path": "",
-        "video": "https://www.youtube.com/embed/EYX2CleOGAQ",
+        "video": "https://www.youtube.com/embed/s9vRrZc1OdU",
         "more_img_slide": ["./assets-nova/img/projects/proj1_3.PNG", "./assets-nova/img/projects/proj1_4.PNG", "./assets-nova/img/projects/proj1_5.PNG"]
     },
     1: {

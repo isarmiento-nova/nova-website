@@ -414,7 +414,7 @@ $('#carousel-portafolio').on('slid.bs.carousel', function () {
 
 // animations experiencia, change video
 
-var videos = ['https://www.youtube.com/embed/C7Kmx17tpJM', 'https://www.youtube.com/embed/ZLbkuZDxk1o', 'https://www.youtube.com/embed/c4tH__VqAuE', 'https://www.youtube.com/embed/EYX2CleOGAQ']
+var videos = ['https://www.youtube.com/embed/C7Kmx17tpJM', 'https://www.youtube.com/embed/ZLbkuZDxk1o', 'https://www.youtube.com/embed/c4tH__VqAuE', 'https://www.youtube.com/embed/s9vRrZc1OdU']
 function desapearNormalList(id) {
   var cards = $('.normal-list .video-base');
   for (let i = 0; i < cards.length; i++) {
@@ -506,21 +506,13 @@ $(".container-mail a").hover(function () {
 
 
 //modal
-var player;
-function showModalReel(){/*
-  player = new YT.Player('player', {
-    height: '360',
-    width: '100%',
-    videoId: 'M7lc1UVf-VE',
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });*/
+var videos=["https://www.youtube.com/embed/shxiv4wS-_w",
+            "https://www.youtube.com/embed/shxiv4wS-_w"];
+function showModalReel(id){
 
   $("#modal-reel-container").removeClass('hide-modal');
   $("#modal-reel-container").addClass('show-modal');
-  $("#reel-video-holder").html(`<iframe width="100%" height="315" src="https://www.youtube.com/embed/shxiv4wS-_w" class="video-reel" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`)
+  $("#reel-video-holder").html(`<iframe width="100%" height="315" src="`+videos[id]+`" class="video-reel" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`)
   document.getElementsByClassName('video-reel')[0].setAttribute("height", document.getElementsByClassName("video-reel")[0].offsetWidth * 0.5625)
 }
 
