@@ -506,13 +506,13 @@ $(".container-mail a").hover(function () {
 
 
 //modal
-var videos=["https://www.youtube.com/embed/shxiv4wS-_w",
+var videosPopUp=["https://www.youtube.com/embed/r95iH_rpriA",
             "https://www.youtube.com/embed/shxiv4wS-_w"];
 function showModalReel(id){
 
   $("#modal-reel-container").removeClass('hide-modal');
   $("#modal-reel-container").addClass('show-modal');
-  $("#reel-video-holder").html(`<iframe width="100%" height="315" src="`+videos[id]+`" class="video-reel" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`)
+  $("#reel-video-holder").html(`<iframe width="100%" height="315" src="`+videosPopUp[id]+`" class="video-reel" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`)
   document.getElementsByClassName('video-reel')[0].setAttribute("height", document.getElementsByClassName("video-reel")[0].offsetWidth * 0.5625)
 }
 
