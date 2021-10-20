@@ -96,8 +96,6 @@ var data = {
 function setProjects() {
     var html = "";
     for (let i = 0; i < Object.keys(data).length; i++) {
-        //ver proyecto, just in case
-        //html += '<div class="my-3 project-item" href="#" onclick="hideList()" onmouseover="switchProjects(' + i + ')"><h1>' + data[i]["name"] + '</h1><h4>' + data[i]["entity"] + '</h4><p class="show-indicator">Ver Proyecto</p></div>';
         html += '<div class="my-3 project-item" href="#" onclick="hideList('+i+')" onmouseover="mouseOver(' + i + ')"><h1>' + data[i]["name"] + '</h1><h4>' + data[i]["entity"] + '</h4></div>';
     }
     $("#project-container").html(html);
@@ -120,14 +118,6 @@ function switchProjects(num) {
         allowfullscreen></iframe>`);
         document.getElementsByClassName("video-iframe")[0].src = data[num]["video"];
     }
-    //third slide elements
-    /*
-    var galery = "";
-    replaceImage(num, 0);
-    for (let i = 0; i < data[num]["more_img_slide"].length; i++) {
-        galery += "<div class=\"px-3 py-3 col-5 col-md-12\" onclick=\"replaceImage(" + num + "," + i + ")\"> <img class=\"width-100\"src=" + data[num]["more_img_slide"][i] + "></div>"
-    }
-    $("#list-of-images").html(galery);*/
 }
 
 function replaceImage(project, id) {

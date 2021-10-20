@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <META HTTP-EQUIV="Access-Control-Allow-Origin" CONTENT="https://docs.google.com">
+    <title>Nova Transmedia</title>
+    <meta name="author" content="Nova Transmedia" />
+    <meta name="description" content="New Nova Transmedia webpage" />
+    <meta name="keywords" content="trasnmedia,bogota,colombia,apps,contenido,educacion,universidad nacional" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+
+    <!-- Favicons -->
+    <link href="../assets-nova/img/favicon.png" rel="icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400i,400,500,600,700,700i|Lato:300,300i,400,400i,700,700i"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link href="../assets-nova/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets-nova/css/bootstrap.css.map">
+    <link rel="stylesheet" type="text/css" href="../assets-nova/dist/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="../assets-nova/css/examples.css" />
+    <link href="assets-nova/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<!-- <body> -->
+
+<body onload="load()" class="main">
+
+
+    <!-- Navbar -->
+    <nav id="mySidenav" class="sidenav-parent">
+
+        <div id="sidenav-logo" href="javascript:void(0)" onclick="closeNav()">
+            <!-- <a href="#inicio"><img id="logo-img-in" src="../assets-nova/img/anim-logo-in.png" alt="Logo Nova Transmedia" ></a> -->
+            <a href="#inicio"><img id="logo-gif-in" src="../assets-nova/img/anim-logo-in.gif"
+                    alt="Logo Nova Transmedia" onclick="transitionToPage('../#inicio', '#280250')"></a>
+            <!-- <a href="#seccion-0"><img id="logo-img-out" src="../assets-nova/img/anim-logo-out.png" alt="Logo Nova Transmedia"></a> -->
+            <a href="#inicio"><img id="logo-gif-out" src="../assets-nova/img/anim-logo-out.gif"
+                    alt="Logo Nova Transmedia" onclick="transitionToPage('../#inicio', '#280250')"></a>
+        </div>
+
+        <div id="sidenav" href="javascript:void(0)" onclick="toggleNav()">
+
+            <div id="sidenav-menu" class="color-letra-blanco">
+                <!-- <img src="../assets-nova/img/icon_menu.png" alt="Icono menu" height="30px"> -->
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div id="sidenav-menu-content">
+                <div id="sidenav-links">
+                    <div id="sidenav-links">
+                        <ul class="normal-elements">
+                            <li data-menuanchor="inicio"><a href="#"
+                                    onclick="transitionToPage('../#inicio', '#280250')">Inicio</a>
+                            </li>
+                            <li data-menuanchor="nosotros"><a href="#"
+                                    onclick="transitionToPage('../#nosotros', '#FF4E15')">Nosotros</a></li>
+                            <li data-menuanchor="portafolio"><a href="#"
+                                    onclick="transitionToPage('../#portafolio', '#ffffff')">Portafolio</a></li>
+                            <li data-menuanchor="experiencia"><a href="#"
+                                    onclick="transitionToPage('../#experiencia', '#280250')">Experiencia</a></li>
+                            <li data-menuanchor="contacto"><a href="#"
+                                    onclick="transitionToPage('../#contacto', '#0d6efd')">Contacto</a></li>
+                        </ul>
+                </div>
+
+                <div id="sidenav-redes">
+                    <a href="https://www.linkedin.com/company/novatransmedia/" target="_blank"><span>Linkedin</span><img
+                            src="../assets-nova/img/icon-linkedin.png" alt="icono linkedin" height="20px"
+                            style="margin-left: 5px;"></a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Elementos de todas las vistas -->
+    <!--<div class="flecha-top d-none" href="javascript:void(0)" onclick="closeNav()">
+        <a href="#inicio"><img src="../assets-nova/img/icon-flecha-top.png" alt="Flecha top" height="25px"></a>
+    </div>-->
+
+    <div class="icon-whatsapp">
+        <a href="https://wa.me/573024260843"><img src="../assets-nova/img/icon-whatsapp.png" alt="Flecha top" height="40px"></a>
+    </div>
+
+    <!-- Nice, I have to make my own modal to make it works in this page... really nice... -->
+    <div id="modal-reel-container" class="modal-reel frame-modal row justify-content-center align-content-center" onclick="hideModalReel()">
+        <div id="reel-video-holder" class="col-11 col-md-9">
+            
+        </div>
+    </div>
+
+    <div id="fullpage">
+        <!-- Home -->
+        <section class="section " id="section0">
+            <h2 class="politicas-titulo mt-5 mb-3 my-md-3">Laboratorios 360 UNAL - NovaLabs 360+ <br>
+
+                Política de privacidad</h2>
+
+            <iframe class="iframe-politicas" src="https://docs.google.com/document/d/e/2PACX-1vRY2qtYXufcmZoJqKf92gTSPw71dlilVhNFN-R8P6TBibv3A3trk_eiUlJcNi7Gq7QN3Ey30vUVX86J/pub?embedded=true"></iframe>
+        </section>
+
+    <!-- SCRIPTS -->
+
+    <script src="../assets-nova/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets-nova/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../assets-nova/dist/fullpage.js"></script>
+
+    <!-- <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+          //sectionsColor: ['#00000000', '#00000000', '#00000000', '#00000000', '#00000000'],
+          anchors: ['inicio', 'nosotros', 'experiencia', 'portafolio', 'contacto'],
+          menu: '#menu',
+          continuousVertical: true,
+          afterLoad: function(anchorLink, index){
+                console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
+            },
+            onLeave: function(index, nextIndex, direction){
+                console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
+    
+            },
+        });
+    </script> -->
+
+    <script src="../assets-nova/js/anime.js"></script>
+
+    <script src="../assets-nova/js/liquid.js"></script>
+    <script src="../assets-nova/js/main.js"></script>
+    <script src="../assets-nova/js/palabras.js"></script>
+    <script src="../assets-nova/js/portafolioInteractions.js"></script>
+
+    <script src="../assets-nova/js/change-color.js"></script>
+
+    <script>
+        function load() {
+            reportWindowSize();
+            initLogo();
+        }
+        function redirectPlaystore(){
+            //window.location.replace("https://play.google.com/store/apps/details?id=com.gitei.lab360")
+        }
+    </script>
+
+</body>
+
+</html>

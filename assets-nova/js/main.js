@@ -29,8 +29,6 @@ function reportWindowSize() {
 
 
   // mostrar el primer carousle elemento
-  //porque deberia hacer esto!?
-  //yeiii lo puedo comentar!
   /*
   if (window.location.href.indexOf("projects.html") <= -1) {
     var carousel01 = document.getElementById("carousel-1");
@@ -50,7 +48,7 @@ function reportWindowSize() {
     resizeCharacters(heightDiv / 5);
   }
 
-
+  
 
 
   var mediaqueryList = window.matchMedia("(orientation:portrait)");
@@ -524,8 +522,7 @@ function hideModalReel(){
 }
 
 
-
-
+  
 
 
 

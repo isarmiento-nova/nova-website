@@ -1920,3 +1920,15 @@ cursor: pointer;
 
 
 }
+
+.politicas-titulo{
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.iframe-politicas{
+  height: 70%;
+  width: 80%;
+  max-width: 640.9pt;
+}
+
